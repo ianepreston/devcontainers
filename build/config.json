@@ -1,33 +1,29 @@
 {
-	"containerRegistry": "devcon.azurecr.io",
-	"containerRegistryPath": "public/devcontainers",
-	"secondaryContainerRegistryPath": "public/vscode/devcontainers",
-	"stubRegistry": "mcr.microsoft.com",
-	"stubRegistryPath": "devcontainers",
-	"githubRepoName": "devcontainers/images",
+	"containerRegistry": "docker.io",
+	"containerRegistryPath": "ianepreston",
+	"secondaryContainerRegistryPath": "ianepreston",
+	"stubRegistry": "ianepreston",
+	"stubRegistryPath": "ianepreston",
+	"githubRepoName": "ianepreston/devcontainers",
 	"containersPathInRepo": "src",
 	"historyFolderName": "history",
-	"historyUrlPrefix": "https://github.com/devcontainers/images/tree/main/src/",
-	"repositoryUrl": "https://github.com/devcontainers/images",
+	"historyUrlPrefix": "https://github.com/ianepreston/devcontainers/tree/main/src/",
+	"repositoryUrl": "https://github.com/ianepreston/devcontainers",
 	"imageLabelPrefix": "dev.containers",
 	"imageBuildConfigFile": "manifest.json",
 	"devContainerJsonPreamble": "For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:\n// ",
 	"dockerFilePreamble": "See here for image contents: ",
-
 	"filesToStage": [
 		"src/**/!(test-project|history)/*",
 		"LICENSE",
 		"package.json"
 	],
-
-	"needsDedicatedPage": [ 
+	"needsDedicatedPage": [
 		"universal",
 		"php",
 		"python"
 	],
-
 	"flattenBaseImage": [],
-
 	"poolKeys": {
 		"https://dl.yarnpkg.com/debian": "https://dl.yarnpkg.com/debian/pubkey.gpg",
 		"https://packages.microsoft.com/repos/microsoft-debian-stretch-prod": "https://packages.microsoft.com/keys/microsoft.asc",
@@ -42,7 +38,6 @@
 		"https://packagecloud.io/github/git-lfs/ubuntu": "https://packagecloud.io/github/git-lfs/gpgkey",
 		"https://packagecloud.io/github/git-lfs/debian": "https://packagecloud.io/github/git-lfs/gpgkey"
 	},
-
 	"poolUrlFallback": {
 		"moby-cli": "https://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod",
 		"moby-engine": "https://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod",
@@ -51,7 +46,6 @@
 		"git-lfs": "https://packagecloud.io/github/git-lfs/ubuntu",
 		"azure-cli": "https://packages.microsoft.com/repos/azure-cli"
 	},
-
 	"commonDependencies": {
 		"apt": [
 			"apt-utils",
@@ -139,7 +133,6 @@
 			"man-pages"
 		]
 	},
-
 	"otherDependencyDefaultSettings": {
 		"SDKMAN!": {
 			"versionCommand": ". /usr/local/sdkman/bin/sdkman-init.sh && echo 'n' | sdk version | grep -oP 'SDKMAN\\s+\\K[0-9]+\\.[0-9]+\\.[0-9]+[+0-9a-z]*' | tr -d '[:cntrl:]'",
@@ -223,7 +216,7 @@
 		},
 		"PHP": {
 			"versionCommand": "php --version | grep -oP 'PHP\\s\\K[0-9][^\\s]+'",
-			"downloadUrl":"https://xdebug.org/"
+			"downloadUrl": "https://xdebug.org/"
 		},
 		"Java": {
 			"versionCommand": "java --version | grep -oP 'openjdk\\s+\\K[0-9]+\\.[0-9]+\\.[0-9]+'",
