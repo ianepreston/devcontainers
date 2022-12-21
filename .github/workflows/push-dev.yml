@@ -40,6 +40,8 @@ jobs:
       id: build_and_push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+        DOCKER_PAT: ${{ secrets.DOCKERHUB_TOKEN }}
         REGISTRY: ${{ secrets.REGISTRY }}
         REGISTRY_BASE_PATH: ${{ secrets.REGISTRY_BASE_PATH }}
         STUB_REGISTRY: ${{ secrets.STUB_REGISTRY }}
@@ -51,6 +53,7 @@ jobs:
         # ACR login
         # ACR_REGISTRY_NAME=$(echo "$REGISTRY" | grep -oP '(.+)(?=\.azurecr\.io)')
         # az acr login --name $ACR_REGISTRY_NAME
+        docker login -u $DOCKER_USER -p $DOCKER_PAT
 
         # Build and push dev images
         yarn install
