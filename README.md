@@ -7,3 +7,8 @@ This repository contains a set of **dev container images** which are Docker imag
 ## Contents
  
 - [`src`](src) - Contains reusable dev container images.
+
+## Notes from Ian
+
+After starting this up you have to run `yarn install` before you can do local builds.
+Might add this to the devcontainer startup command spec after I see if that breaks anything in CI/CD
