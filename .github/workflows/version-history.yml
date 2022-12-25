@@ -47,25 +47,28 @@ jobs:
       id: checkout
       uses: actions/checkout@v2
 
-    - name: Azure CLI login
-      id: az_login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZ_ACR_CREDS }}
+    # - name: Azure CLI login
+    #   id: az_login
+    #   uses: azure/login@v1
+    #   with:
+    #     creds: ${{ secrets.AZ_ACR_CREDS }}
 
     - name: Get image info
       id: Get_image_info
       env:
         REGISTRY: ${{ secrets.REGISTRY }}
         REGISTRY_BASE_PATH: ${{ secrets.REGISTRY_BASE_PATH }}
+        DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+        DOCKER_PAT: ${{ secrets.DOCKERHUB_TOKEN }}
         STUB_REGISTRY: ${{ secrets.STUB_REGISTRY }}
         STUB_REGISTRY_BASE_PATH: ${{ secrets.STUB_REGISTRY_BASE_PATH }}
       run: |
         set -e
 
         # ACR login
-        ACR_REGISTRY_NAME=$(echo "$REGISTRY" | grep -oP '(.+)(?=\.azurecr\.io)')
-        az acr login --name $ACR_REGISTRY_NAME
+        # ACR_REGISTRY_NAME=$(echo "$REGISTRY" | grep -oP '(.+)(?=\.azurecr\.io)')
+        # az acr login --name $ACR_REGISTRY_NAME
+        docker login -u $DOCKER_USER -p $DOCKER_PAT
 
         yarn install
         RELEASE_STRING=$(echo "${{ inputs.release }}" | grep -oP 'refs/(heads|tags)/\K(.+)')
