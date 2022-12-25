@@ -47,12 +47,6 @@ jobs:
       id: checkout
       uses: actions/checkout@v2
 
-    # - name: Azure CLI login
-    #   id: az_login
-    #   uses: azure/login@v1
-    #   with:
-    #     creds: ${{ secrets.AZ_ACR_CREDS }}
-
     - name: Get image info
       id: Get_image_info
       env:
