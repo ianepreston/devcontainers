@@ -5,7 +5,6 @@
  *-------------------------------------------------------------------------------------------------------------*/
 
 const path = require('path');
-const asyncUtils = require('./src/utils/async');
 const push = require('./src/push').push;
 const generateImageInformationFiles = require('./src/image-info').generateImageInformationFiles;
 const configUtils = require('./src/utils/config');
@@ -81,10 +80,6 @@ require('yargs')
                     describe: 'A space separated list of image names to skip building and pushing.',
                     type: 'array',
                     default: []
-                },
-                'secondary-registry-path': {
-                    describe: 'Secondary container registry path',
-                    default: configUtils.getConfig('secondaryContainerRegistryPath', '')
                 }
             })
     }, pushCommand)
@@ -252,7 +247,7 @@ function testCommand(argv) {
 
 function pushCommand(argv) {
     push(argv.githubRepo, argv.release, argv.updateLatest, argv.registry, argv.registryPath, argv.stubRegistry,
-        argv.stubRegistryPath, argv.push, argv.prepOnly, argv.skip, argv.page, argv.pageTotal, argv.replaceImages, argv.devcontainer, argv.secondaryRegistryPath)
+        argv.stubRegistryPath, argv.push, argv.prepOnly, argv.skip, argv.page, argv.pageTotal, argv.replaceImages, argv.devcontainer)
         .catch((reason) => {
             console.error(`(!) Push failed - ${reason}`);
             if (reason.stack) {
