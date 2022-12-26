@@ -312,23 +312,23 @@ function imageInfoCommand(argv) {
 }
 
 function patchCommand(argv) {
-    if (argv.all) {
-        patch.patchAll(argv.registry, argv.registryPath)
-            .catch((reason) => {
-                console.error(`(!) Patching failed - ${reason}`);
-                if (reason.stack) {
-                    console.error(`    ${reason.stack}`);
-                }
-                process.exit(1);
-            });
-    } else {
-        patch.patch(argv.patchPath, argv.registry, argv.registryPath)
-            .catch((reason) => {
-                console.error(`(!) Patching failed - ${reason}`);
-                if (reason.stack) {
-                    console.error(`    ${reason.stack}`);
-                }
-                process.exit(1);
-            });
-    }
+    // if (argv.all) {
+    //     patch.patchAll(argv.registry, argv.registryPath)
+    //         .catch((reason) => {
+    //             console.error(`(!) Patching failed - ${reason}`);
+    //             if (reason.stack) {
+    //                 console.error(`    ${reason.stack}`);
+    //             }
+    //             process.exit(1);
+    //         });
+    // } else {
+    //     patch.patch(argv.patchPath, argv.registry, argv.registryPath)
+    //         .catch((reason) => {
+    //             console.error(`(!) Patching failed - ${reason}`);
+    //             if (reason.stack) {
+    //                 console.error(`    ${reason.stack}`);
+    //             }
+    //             process.exit(1);
+    //         });
+    // }
 }
