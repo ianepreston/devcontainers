@@ -6,7 +6,7 @@
 		"bionic"
 	],
 	"build": {
-		"latest": false,
+		"latest": true,
 		"rootDistro": "debian",
 		"architectures": {
 			"jammy": [
@@ -22,21 +22,21 @@
 			]
 		},
 		"tags": [
-			"base:${VERSION}-${VARIANT}"
+			"base-devcontainer:${VERSION}-${VARIANT}"
 		],
 		"variantTags": {
 			"jammy": [
-				"base:${VERSION}-ubuntu-22.04",
-				"base:${VERSION}-ubuntu22.04",
-				"base:${VERSION}-ubuntu"
+				"base-devcontainer:${VERSION}-ubuntu-22.04",
+				"base-devcontainer:${VERSION}-ubuntu22.04",
+				"base-devcontainer:${VERSION}-ubuntu"
 			],
 			"focal": [
-				"base:${VERSION}-ubuntu-20.04",
-				"base:${VERSION}-ubuntu20.04"
+				"base-devcontainer:${VERSION}-ubuntu-20.04",
+				"base-devcontainer:${VERSION}-ubuntu20.04"
 			],
 			"bionic": [
-				"base:${VERSION}-ubuntu-18.04",
-				"base:${VERSION}-ubuntu18.04"
+				"base-devcontainer:${VERSION}-ubuntu-18.04",
+				"base-devcontainer:${VERSION}-ubuntu18.04"
 			]
 		}
 	},

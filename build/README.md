@@ -111,8 +111,8 @@ The `build` namespace includes properties that defines how the templates maps to
     "rootDistro": "debian",
     "latest": true,
     "tags": [
-        "base:${VERSION}-debian-11",
-        "base:${VERSION}-bullseye"
+        "base-devcontainer:${VERSION}-debian-11",
+        "base-devcontainer:${VERSION}-bullseye"
     ]
 }
 ```
@@ -206,7 +206,7 @@ For example:
 "build": {
     "latest": "bullseye",
     "tags": [
-        "base:${VARIANT}"
+        "base-devcontainer:${VARIANT}"
     ],
     "variantTags": {
         "bullseye": [
