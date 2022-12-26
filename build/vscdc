@@ -5,6 +5,7 @@
  *-------------------------------------------------------------------------------------------------------------*/
 
 const path = require('path');
+const asyncUtils = require('./src/utils/async');
 const push = require('./src/push').push;
 const patch = require('./src/patch');
 const generateImageInformationFiles = require('./src/image-info').generateImageInformationFiles;
@@ -238,16 +239,34 @@ require('yargs')
                 }
             })
     }, patchCommand)
+    .command('test', 'try doing some stuff', (yargs) => {
+    }, testCommand)
     .demandCommand()
     .help()
     .argv;
+
+async function isImageAlreadyPublished(registryName, repositoryName, tagName) {
+    registryName = registryName.replace(/\.azurecr\.io.*/, '');
+    // Check if repository exists
+    const repositoriesOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'list', '--name', registryName], { shell: true, stdio: 'pipe' });
+    const repositories = JSON.parse(repositoriesOutput);
+    if (repositories.indexOf(repositoryName) < 0) {
+        console.log('(*) Repository does not exist. Image version has not been published yet.')
+        return false;
+    }
+}
+
+function testCommand(argv) {
+    console.log('Hello world!');
+    isImageAlreadyPublished('docker.io', 'ianepreston', 'dev-ubuntu20.04')
+}
 
 function pushCommand(argv) {
     push(argv.githubRepo, argv.release, argv.updateLatest, argv.registry, argv.registryPath, argv.stubRegistry,
         argv.stubRegistryPath, argv.push, argv.prepOnly, argv.skip, argv.page, argv.pageTotal, argv.replaceImages, argv.devcontainer, argv.secondaryRegistryPath)
         .catch((reason) => {
             console.error(`(!) Push failed - ${reason}`);
-            if(reason.stack) {
+            if (reason.stack) {
                 console.error(`    ${reason.stack}`);
             }
             process.exit(1);
@@ -255,11 +274,11 @@ function pushCommand(argv) {
 }
 
 function imageInfoCommand(argv) {
-    generateImageInformationFiles(argv.githubRepo, argv.release, argv.registry, argv.registryPath, argv.stubRegistry, argv.stubRegistryPath, 
+    generateImageInformationFiles(argv.githubRepo, argv.release, argv.registry, argv.registryPath, argv.stubRegistry, argv.stubRegistryPath,
         argv.build, argv.prune, argv.cg, argv.markdown, argv.overwrite, argv.outputPath, argv.devcontainer)
         .catch((reason) => {
             console.error(`(!) Image information file generation failed - ${reason}`);
-            if(reason.stack) {
+            if (reason.stack) {
                 console.error(`    ${reason.stack}`);
             }
             process.exit(1);
@@ -271,18 +290,18 @@ function patchCommand(argv) {
         patch.patchAll(argv.registry, argv.registryPath)
             .catch((reason) => {
                 console.error(`(!) Patching failed - ${reason}`);
-                if(reason.stack) {
+                if (reason.stack) {
                     console.error(`    ${reason.stack}`);
-                }    
+                }
                 process.exit(1);
             });
     } else {
         patch.patch(argv.patchPath, argv.registry, argv.registryPath)
             .catch((reason) => {
                 console.error(`(!) Patching failed - ${reason}`);
-                if(reason.stack) {
+                if (reason.stack) {
                     console.error(`    ${reason.stack}`);
-                }    
+                }
                 process.exit(1);
             });
     }
