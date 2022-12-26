@@ -68,8 +68,8 @@ jobs:
                           --github-repo ${{ github.repository }} \
                           --registry "$REGISTRY" \
                           --registry-path "$REGISTRY_BASE_PATH" 
-                          --stub-registry "$STUB_REGISTRY" \
-                          --stub-registry-path "$STUB_REGISTRY_BASE_PATH" \
+                          # --stub-registry "$STUB_REGISTRY" \
+                          # --stub-registry-path "$STUB_REGISTRY_BASE_PATH" \
 
   image-info:
     name: Trigger info extraction
