@@ -1,8 +1,8 @@
-# [base-ubuntu](https://github.com/devcontainers/images/tree/main/src/base-ubuntu)
+# [base-ubuntu](https://github.com/ianepreston/devcontainers/tree/main/src/base-ubuntu)
 
 **Image version:** dev
 
-**Source release/branch:** [main](https://github.com/devcontainers/images/tree/main/src/base-ubuntu)
+**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/base-ubuntu)
 
 **Image variations:**
 - [jammy](#variant-jammy)
@@ -11,14 +11,14 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:cb050fd91ba6076b9a5683a66dd1f2540ef6180f346909de9af997e8aaf2481a
+**Digest:** sha256:7894de2dffead5b6aaae617070bc89de65e8d34ba5824381436dc73d8a244774
 
 **Tags:**
 ```
-mcr.microsoft.com/devcontainers/base:dev-jammy
-mcr.microsoft.com/devcontainers/base:dev-ubuntu-22.04
-mcr.microsoft.com/devcontainers/base:dev-ubuntu22.04
-mcr.microsoft.com/devcontainers/base:dev-ubuntu
+docker.io/ianepreston/base:dev-jammy
+docker.io/ianepreston/base:dev-ubuntu-22.04
+docker.io/ianepreston/base:dev-ubuntu22.04
+docker.io/ianepreston/base:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -29,12 +29,6 @@ mcr.microsoft.com/devcontainers/base:dev-ubuntu
 **Available (non-root) user:** vscode
 
 ### Contents
-**Tools installed using git**
-
-| Tool | Commit | Path |
-|------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 2bc42d223cfe3e21aef06648fb971bd9fb00828e | /home/vscode/.oh-my-zsh |
-
 **Additional linux tools and packages**
 
 | Tool / library | Version |
@@ -75,17 +69,16 @@ mcr.microsoft.com/devcontainers/base:dev-ubuntu
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
-| zsh | 5.8.1-1 |
 
 ## Variant: focal
 
-**Digest:** sha256:de72f7cd201c4849890b2cf889b4c77c56c128db8787432c8765b925ee97e7db
+**Digest:** sha256:8bb43b4878f2813778c8ed2ef23e86c9d773078f27384aa37374104ecc1e1dd6
 
 **Tags:**
 ```
-mcr.microsoft.com/devcontainers/base:dev-focal
-mcr.microsoft.com/devcontainers/base:dev-ubuntu-20.04
-mcr.microsoft.com/devcontainers/base:dev-ubuntu20.04
+docker.io/ianepreston/base:dev-focal
+docker.io/ianepreston/base:dev-ubuntu-20.04
+docker.io/ianepreston/base:dev-ubuntu20.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -96,12 +89,6 @@ mcr.microsoft.com/devcontainers/base:dev-ubuntu20.04
 **Available (non-root) user:** vscode
 
 ### Contents
-**Tools installed using git**
-
-| Tool | Commit | Path |
-|------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 2bc42d223cfe3e21aef06648fb971bd9fb00828e | /home/vscode/.oh-my-zsh |
-
 **Additional linux tools and packages**
 
 | Tool / library | Version |
@@ -145,17 +132,16 @@ mcr.microsoft.com/devcontainers/base:dev-ubuntu20.04
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
-| zsh | 5.8-3ubuntu1.1 |
 
 ## Variant: bionic
 
-**Digest:** sha256:ee654c55c7e898f7ac42796064939e56a81c0019cb6c8ac5dee7dc69a11bb2ee
+**Digest:** sha256:8ded59d3891362f49567813c31016fd08e8ad0d8da042ab03a3e9593c9a5252e
 
 **Tags:**
 ```
-mcr.microsoft.com/devcontainers/base:dev-bionic
-mcr.microsoft.com/devcontainers/base:dev-ubuntu-18.04
-mcr.microsoft.com/devcontainers/base:dev-ubuntu18.04
+docker.io/ianepreston/base:dev-bionic
+docker.io/ianepreston/base:dev-ubuntu-18.04
+docker.io/ianepreston/base:dev-ubuntu18.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -166,12 +152,6 @@ mcr.microsoft.com/devcontainers/base:dev-ubuntu18.04
 **Available (non-root) user:** vscode
 
 ### Contents
-**Tools installed using git**
-
-| Tool | Commit | Path |
-|------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 2bc42d223cfe3e21aef06648fb971bd9fb00828e | /home/vscode/.oh-my-zsh |
-
 **Additional linux tools and packages**
 
 | Tool / library | Version |
@@ -216,5 +196,4 @@ mcr.microsoft.com/devcontainers/base:dev-ubuntu18.04
 | wget | 1.19.4-1ubuntu2.2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-0ubuntu2.2 |
-| zsh | 5.4.2-3ubuntu3.2 |
 
