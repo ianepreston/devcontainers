@@ -246,7 +246,8 @@ require('yargs')
     .argv;
 
 async function isImageAlreadyPublished(registryName, repositoryName, tagName) {
-    registryName = registryName.replace(/\.azurecr\.io.*/, '');
+    // Just not doing anything with registryName, it's all dockerhub
+    // registryName = registryName.replace(/\.azurecr\.io.*/, '');
     // Check if repository exists
     // const repositoriesOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'list', '--name', registryName], { shell: true, stdio: 'pipe' });
     const repositoriesOutput = await asyncUtils.spawn('curl', [
@@ -265,7 +266,7 @@ async function isImageAlreadyPublished(registryName, repositoryName, tagName) {
     //     '--query', `"[?@=='${tagName}']"`
     // ], { shell: true, stdio: 'pipe' });
     const tagListOutput = await asyncUtils.spawn('curl', [
-        '-s', 'https://hub.docker.com/v2/repositories/ianepreston/base/tags?page_size=100'
+        '-s', `https://hub.docker.com/v2/repositories/ianepreston/${repositoryName}/tags?page_size=100`
     ], { shell: true, stdio: 'pipe' });
     const tagList = JSON.parse(tagListOutput);
     if (tagList.results.length <= 0) {
@@ -283,7 +284,7 @@ async function isImageAlreadyPublished(registryName, repositoryName, tagName) {
 
 function testCommand(argv) {
     console.log('Hello world!');
-    isImageAlreadyPublished('docker.io', 'terra_mystica', 'nonexistenttag')
+    isImageAlreadyPublished('docker.io', 'base', 'dev-bionic')
 }
 
 function pushCommand(argv) {
