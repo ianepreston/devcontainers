@@ -11,14 +11,14 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:7894de2dffead5b6aaae617070bc89de65e8d34ba5824381436dc73d8a244774
+**Digest:** sha256:e71ef5e780cfb095f712dd54ed8903223e8d46652d6b34fbcf9198f04e1eb135
 
 **Tags:**
 ```
-docker.io/ianepreston/base:dev-jammy
-docker.io/ianepreston/base:dev-ubuntu-22.04
-docker.io/ianepreston/base:dev-ubuntu22.04
-docker.io/ianepreston/base:dev-ubuntu
+docker.io/ianepreston/base-devcontainer:dev-jammy
+docker.io/ianepreston/base-devcontainer:dev-ubuntu-22.04
+docker.io/ianepreston/base-devcontainer:dev-ubuntu22.04
+docker.io/ianepreston/base-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -72,13 +72,13 @@ docker.io/ianepreston/base:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:8bb43b4878f2813778c8ed2ef23e86c9d773078f27384aa37374104ecc1e1dd6
+**Digest:** sha256:65014937f0429f65696e7d5695353f8145eb7f281d155a056f07e16783483171
 
 **Tags:**
 ```
-docker.io/ianepreston/base:dev-focal
-docker.io/ianepreston/base:dev-ubuntu-20.04
-docker.io/ianepreston/base:dev-ubuntu20.04
+docker.io/ianepreston/base-devcontainer:dev-focal
+docker.io/ianepreston/base-devcontainer:dev-ubuntu-20.04
+docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -135,13 +135,13 @@ docker.io/ianepreston/base:dev-ubuntu20.04
 
 ## Variant: bionic
 
-**Digest:** sha256:8ded59d3891362f49567813c31016fd08e8ad0d8da042ab03a3e9593c9a5252e
+**Digest:** sha256:af4a3118f02ba14e5852faa963c8ca4b93dcad9c7263c4f952417029ea1c249a
 
 **Tags:**
 ```
-docker.io/ianepreston/base:dev-bionic
-docker.io/ianepreston/base:dev-ubuntu-18.04
-docker.io/ianepreston/base:dev-ubuntu18.04
+docker.io/ianepreston/base-devcontainer:dev-bionic
+docker.io/ianepreston/base-devcontainer:dev-ubuntu-18.04
+docker.io/ianepreston/base-devcontainer:dev-ubuntu18.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
