@@ -6,7 +6,7 @@
 		"bionic"
 	],
 	"build": {
-		"latest": true,
+		"latest": "jammy",
 		"rootDistro": "debian",
 		"architectures": {
 			"jammy": [
