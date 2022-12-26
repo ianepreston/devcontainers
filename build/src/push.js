@@ -214,28 +214,54 @@ async function isDefinitionVersionAlreadyPublished(definitionId, release, regist
 }
 
 async function isImageAlreadyPublished(registryName, repositoryName, tagName) {
-    registryName = registryName.replace(/\.azurecr\.io.*/, '');
+    // Uncomment the line below if you're doing this with an image in Azure CR
+    // registryName = registryName.replace(/\.azurecr\.io.*/, '');
     // Check if repository exists
-    const repositoriesOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'list', '--name', registryName], { shell: true, stdio: 'pipe' });
+    // Use the line below if you're doing this with an image in Azure CR
+    // const repositoriesOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'list', '--name', registryName], { shell: true, stdio: 'pipe' });
+    const repositoriesOutput = await asyncUtils.spawn('curl', [
+        '-s', 'https://hub.docker.com/v2/repositories/ianepreston/?page_size=100'
+    ], { shell: true, stdio: 'pipe' })
     const repositories = JSON.parse(repositoriesOutput);
-    if (repositories.indexOf(repositoryName) < 0) {
+    // Again, This if block assumes you're using Azure CR
+    // if (repositories.indexOf(repositoryName) < 0) {
+    //     console.log('(*) Repository does not exist. Image version has not been published yet.')
+    //     return false;
+    // }
+    const repositoriesFilter = repositories.results.filter(it => it.name === repositoryName);
+    if (repositoriesFilter.length <= 0) {
         console.log('(*) Repository does not exist. Image version has not been published yet.')
         return false;
     }
 
     // Assuming repository exists, check if tag exists
-    const tagListOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'show-tags',
-        '--name', registryName,
-        '--repository', repositoryName,
-        '--query', `"[?@=='${tagName}']"`
+    const tagListOutput = await asyncUtils.spawn('curl', [
+        '-s', `https://hub.docker.com/v2/repositories/ianepreston/${repositoryName}/tags?page_size=100`
     ], { shell: true, stdio: 'pipe' });
     const tagList = JSON.parse(tagListOutput);
-    if (tagList.length > 0) {
-        console.log('(*) Image version has already been published.')
+    if (tagList.results.length <= 0) {
+        console.log('(*) Image has no tags, Image version has not been published yet.')
+        return false;
+    }
+    const tagsFilter = tagList.results.filter(it => it.name === tagName)
+    if (tagsFilter.length >= 1) {
+        console.log('(*) Image version has already been published')
         return true;
     }
     console.log('(*) Image version has not been published yet.')
     return false;
+    // const tagListOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'show-tags',
+    //     '--name', registryName,
+    //     '--repository', repositoryName,
+    //     '--query', `"[?@=='${tagName}']"`
+    // ], { shell: true, stdio: 'pipe' });
+    // const tagList = JSON.parse(tagListOutput);
+    // if (tagList.length > 0) {
+    //     console.log('(*) Image version has already been published.')
+    //     return true;
+    // }
+    // console.log('(*) Image version has not been published yet.')
+    // return false;
 }
 
 async function createOrUseBuilder() {
