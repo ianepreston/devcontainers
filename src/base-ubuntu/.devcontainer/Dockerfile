@@ -6,9 +6,6 @@ ARG VARIANT
 
 LABEL dev.containers.features="common"
 
-# Update the image
-RUN apt update && apt upgrade -y
-
 RUN if [ "${VARIANT}" = "bionic" ] ; then \
 	export DEBIAN_FRONTEND=noninteractive && \
 	apt-get update && \
@@ -16,9 +13,18 @@ RUN if [ "${VARIANT}" = "bionic" ] ; then \
 	add-apt-repository ppa:martin-frost/thoughtbot-rcm ; \
 	fi
 
-# Install RCM for dotfiles management
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-	&& apt-get -y install --no-install-recommends rcm
+# Install updates and dependencies
+RUN	apt update && \
+	apt upgrade -y && \
+	DEBIAN_FRONTEND=noninteractive apt install -y \
+	# Required for ssh-agent (don't really need it in container but breaks my dotfiles otherwise)
+	keychain \
+	# dotfiles management
+	rcm \
+	# Handle timezone
+	locales \
+	# Gotta have vim
+	vim
 
 # Install starship prompt
 RUN curl -sS https://starship.rs/install.sh  | sh -s -- --yes
@@ -28,8 +34,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN ln -fs /usr/share/zoneinfo/America/Edmonton /etc/localtime
 ENV TZ=America/Edmonton
 
-RUN	DEBIAN_FRONTEND=noninteractive apt install -y \
-	locales
 
 # Set the locales for Canada and US (US needed for pyenv apparently)
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
