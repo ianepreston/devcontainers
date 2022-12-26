@@ -7,7 +7,6 @@
 const path = require('path');
 const asyncUtils = require('./src/utils/async');
 const push = require('./src/push').push;
-const patch = require('./src/patch');
 const generateImageInformationFiles = require('./src/image-info').generateImageInformationFiles;
 const configUtils = require('./src/utils/config');
 const packageJson = require('../package.json');
@@ -245,46 +244,10 @@ require('yargs')
     .help()
     .argv;
 
-async function isImageAlreadyPublished(registryName, repositoryName, tagName) {
-    // Just not doing anything with registryName, it's all dockerhub
-    // registryName = registryName.replace(/\.azurecr\.io.*/, '');
-    // Check if repository exists
-    // const repositoriesOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'list', '--name', registryName], { shell: true, stdio: 'pipe' });
-    const repositoriesOutput = await asyncUtils.spawn('curl', [
-        '-s', 'https://hub.docker.com/v2/repositories/ianepreston/?page_size=100'
-    ], { shell: true, stdio: 'pipe' })
-    const repositories = JSON.parse(repositoriesOutput);
-    const repositoriesFilter = repositories.results.filter(it => it.name === repositoryName);
-    if (repositoriesFilter.length <= 0) {
-        console.log('(*) Repository does not exist. Image version has not been published yet.')
-        return false;
-    }
-    // Assuming repository exists, check if tag exists
-    // const tagListOutput = await asyncUtils.spawn('az', ['acr', 'repository', 'show-tags',
-    //     '--name', registryName,
-    //     '--repository', repositoryName,
-    //     '--query', `"[?@=='${tagName}']"`
-    // ], { shell: true, stdio: 'pipe' });
-    const tagListOutput = await asyncUtils.spawn('curl', [
-        '-s', `https://hub.docker.com/v2/repositories/ianepreston/${repositoryName}/tags?page_size=100`
-    ], { shell: true, stdio: 'pipe' });
-    const tagList = JSON.parse(tagListOutput);
-    if (tagList.results.length <= 0) {
-        console.log('(*) Image has no tags, Image version has not been published yet.')
-        return false;
-    }
-    const tagsFilter = tagList.results.filter(it => it.name === tagName)
-    if (tagsFilter.length >= 1) {
-        console.log('(*) Image version has already been published')
-        return true;
-    }
-    console.log('(*) Image version has not been published yet.')
-    return false;
-}
 
 function testCommand(argv) {
     console.log('Hello world!');
-    isImageAlreadyPublished('docker.io', 'base', 'dev-bionic')
+    // isImageAlreadyPublished('docker.io', 'base', 'dev-bionic')
 }
 
 function pushCommand(argv) {
