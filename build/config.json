@@ -1,7 +1,6 @@
 {
 	"containerRegistry": "docker.io",
 	"containerRegistryPath": "ianepreston",
-	"secondaryContainerRegistryPath": "ianepreston",
 	"stubRegistry": "docker.io",
 	"stubRegistryPath": "ianepreston",
 	"githubRepoName": "ianepreston/devcontainers",
