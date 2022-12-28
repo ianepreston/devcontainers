@@ -1,5 +1,5 @@
 {
-	"version": "2.1.0",
+	"version": "0.0.1",
 	"variants": [
 		"jammy",
 		"focal",
@@ -22,26 +22,26 @@
 			]
 		},
 		"tags": [
-			"base-devcontainer:${VERSION}-${VARIANT}"
+			"python-devcontainer:${VERSION}-${VARIANT}"
 		],
 		"variantTags": {
 			"jammy": [
-				"base-devcontainer:${VERSION}-ubuntu-22.04",
-				"base-devcontainer:${VERSION}-ubuntu22.04",
-				"base-devcontainer:${VERSION}-ubuntu"
+				"python-devcontainer:${VERSION}-ubuntu-22.04",
+				"python-devcontainer:${VERSION}-ubuntu22.04",
+				"python-devcontainer:${VERSION}-ubuntu"
 			],
 			"focal": [
-				"base-devcontainer:${VERSION}-ubuntu-20.04",
-				"base-devcontainer:${VERSION}-ubuntu20.04"
+				"python-devcontainer:${VERSION}-ubuntu-20.04",
+				"python-devcontainer:${VERSION}-ubuntu20.04"
 			],
 			"bionic": [
-				"base-devcontainer:${VERSION}-ubuntu-18.04",
-				"base-devcontainer:${VERSION}-ubuntu18.04"
+				"python-devcontainer:${VERSION}-ubuntu-18.04",
+				"python-devcontainer:${VERSION}-ubuntu18.04"
 			]
 		}
 	},
 	"dependencies": {
-		"image": "buildpack-deps:${VARIANT}-curl",
-		"imageLink": "https://hub.docker.com/_/buildpack-deps"
+		"image": "ianepreston/base-devcontainer:${VARIANT}",
+		"imageLink": "https://hub.docker.com/r/ianepreston/base-devcontainer"
 	}
 }

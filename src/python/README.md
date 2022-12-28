@@ -1,14 +1,14 @@
-# Ubuntu
+# Python
 
 ## Summary
 
-*A simple Ubuntu container with Git and other common utilities installed.*
+*Based on my Ubuntu devcontainer, add all the requirements for hypermodern python dev*
 
 | Metadata | Value |  
 |----------|-------|
 | *Categories* | Core, Other |
 | *Image type* | Dockerfile |
-| *Published images* | mcr.microsoft.com/devcontainers/base:ubuntu |
+| *Published images* | https://hub.docker.com/r/ianepreston/python-devcontainer|
 | *Available image variants* | ubuntu-22.04 / jammy, ubuntu-20.04 / focal, ubuntu-18.04 / bionic ([full list](https://mcr.microsoft.com/v2/devcontainers/base/tags/list)) |
 | *Published image architecture(s)* | x86-64, aarch64/arm64 for `ubuntu-22.04` (`jammy`) and `ubuntu-18.04` (`bionic`) variants  |
 | *Container host OS support* | Linux, macOS, Windows |
@@ -21,16 +21,16 @@ See **[history](history)** for information on the contents of published images.
 
 You can directly reference pre-built versions of `Dockerfile` by using the `image` property in `.devcontainer/devcontainer.json` or updating the `FROM` statement in your own `Dockerfile` to one of the following. An example `Dockerfile` is included in this repository.
 
-- `mcr.microsoft.com/devcontainers/base:ubuntu` (latest LTS release)
-- `mcr.microsoft.com/devcontainers/base:ubuntu-22.04` (or `jammy`)
-- `mcr.microsoft.com/devcontainers/base:ubuntu-20.04` (or `focal`)
-- `mcr.microsoft.com/devcontainers/base:ubuntu-18.04` (or `bionic`)
+- `ianepreston/base-python:ubuntu` (latest LTS release)
+- `ianepreston/base-python:ubuntu-22.04` (or `jammy`)
+- `ianepreston/base-python:ubuntu-20.04` (or `focal`)
+- `ianepreston/base-python:ubuntu-18.04` (or `bionic`)
 
 You can decide how often you want updates by referencing a [semantic version](https://semver.org/) of each image. For example:
 
-- `mcr.microsoft.com/devcontainers/base:1-focal`
-- `mcr.microsoft.com/devcontainers/base:1.0-focal`
-- `mcr.microsoft.com/devcontainers/base:1.0.0-focal`
+- `ianepreston/base-python:1-focal`
+- `ianepreston/base-python:1.0-focal`
+- `ianepreston/base-python:1.0.0-focal`
 
 See [history](history) for information on the contents of each version and [here for a complete list of available tags](https://mcr.microsoft.com/v2/devcontainers/base/tags/list).
 
