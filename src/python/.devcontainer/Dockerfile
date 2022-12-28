@@ -1,44 +1,48 @@
 # [Choice] Ubuntu version (use jammy or bionic on local arm64/Apple Silicon): jammy, focal, bionic
 ARG VARIANT="jammy"
-FROM buildpack-deps:${VARIANT}-curl
+FROM ianepreston/base-devcontainer:${VARIANT}
 # Have to set it again to be included in the build
 ARG VARIANT
 
 LABEL dev.containers.features="common"
 
-RUN if [ "${VARIANT}" = "bionic" ] ; then \
-	export DEBIAN_FRONTEND=noninteractive && \
-	apt-get update && \
-	apt-get -y install software-properties-common && \
-	add-apt-repository ppa:martin-frost/thoughtbot-rcm ; \
-	fi
-
-# Install updates and dependencies
-RUN	apt update && \
-	apt upgrade -y && \
+# Pyenv dependencies: https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+RUN apt update && \
 	DEBIAN_FRONTEND=noninteractive apt install -y \
-	# Required for ssh-agent (don't really need it in container but breaks my dotfiles otherwise)
-	keychain \
-	# dotfiles management
-	rcm \
-	# Handle timezone
-	locales \
-	# Gotta have vim
-	vim
+	make \
+	build-essential \
+	libssl-dev \
+	zlib1g-dev \
+	libbz2-dev \
+	libreadline-dev \
+	libsqlite3-dev \
+	# wget \
+	# curl \
+	llvm \
+	libncursesw5-dev \
+	xz-utils \
+	tk-dev \
+	libxml2-dev \
+	libxmlsec1-dev \
+	libffi-dev \
+	liblzma-dev
 
-# Install starship prompt
-RUN curl -sS https://starship.rs/install.sh  | sh -s -- --yes
-
-# Need this because tzdata gets installed and prompts for location if you don't have it
-ARG DEBIAN_FRONTEND=noninteractive
-RUN ln -fs /usr/share/zoneinfo/America/Edmonton /etc/localtime
-ENV TZ=America/Edmonton
-
-
-# Set the locales for Canada and US (US needed for pyenv apparently)
-RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
-	sed -i '/en_CA.UTF-8/s/^# //g' /etc/locale.gen && \
-	locale-gen
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
+# Install pyenv and python versions
+RUN export PYENV_ROOT=/usr/share/pyenv && \
+	curl https://pyenv.run | bash && \
+	export PATH="$PYENV_ROOT/bin:$PATH" && \
+	eval $(pyenv init --path) && \
+	pyenv install 3.11 && \
+	pyenv install 3.10 && \
+	pyenv install 3.9 && \
+	pyenv install 3.8 && \
+	pyenv install 3.7 && \
+	echo 'export PYENV_ROOT=/usr/share/pyenv' >> ~/.bashrc && \
+	echo 'export PYENV_ROOT="/usr/share/pyenv"' >> /home/vscode/.bashrc && \
+	echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc && \
+	echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> /home/vscode/.bashrc && \
+	echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.bashrc && \
+	echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> /home/vscode/.bashrc && \
+	echo 'eval "$(pyenv init -)"' >> ~/.bashrc && \
+	echo 'eval "$(pyenv init -)"' >> /home/vscode/.bashrc && \
+	chmod -R 777 /usr/share/pyenv/shims 
