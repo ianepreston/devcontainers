@@ -4,8 +4,6 @@ FROM ianepreston/base-devcontainer:${VARIANT}
 # Have to set it again to be included in the build
 ARG VARIANT
 
-LABEL dev.containers.features="common"
-
 # Pyenv dependencies: https://github.com/pyenv/pyenv/wiki#suggested-build-environment
 RUN apt update && \
 	DEBIAN_FRONTEND=noninteractive apt install -y \
