@@ -13,6 +13,23 @@
             "installOhMyZsh": "false"
         }
     },
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "eamodio.gitlens",
+                "ms-vsliveshare.vsliveshare",
+                "DavidAnson.vscode-markdownlint",
+                "esbenp.prettier-vscode",
+                "richie5um2.vscode-sort-json",
+                "Gruntfuggly.todo-tree",
+                "redhat.vscode-yaml"
+            ]
+        }
+    },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
     // Use 'postCreateCommand' to run commands after the container is created.
