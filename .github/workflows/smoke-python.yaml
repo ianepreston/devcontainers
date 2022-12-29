@@ -1,4 +1,4 @@
-name: Smoke test "base-ubuntu" build
+name: Smoke test "python" build
 
 on: 
   workflow_dispatch:
