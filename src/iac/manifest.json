@@ -2,8 +2,7 @@
 	"version": "0.0.2",
 	"variants": [
 		"jammy",
-		"focal",
-		"bionic"
+		"focal"
 	],
 	"build": {
 		"latest": "jammy",
@@ -15,10 +14,6 @@
 			],
 			"focal": [
 				"linux/amd64"
-			],
-			"bionic": [
-				"linux/amd64",
-				"linux/arm64"
 			]
 		},
 		"tags": [
@@ -33,10 +28,6 @@
 			"focal": [
 				"iac-devcontainer:${VERSION}-ubuntu-20.04",
 				"iac-devcontainer:${VERSION}-ubuntu20.04"
-			],
-			"bionic": [
-				"iac-devcontainer:${VERSION}-ubuntu-18.04",
-				"iac-devcontainer:${VERSION}-ubuntu18.04"
 			]
 		}
 	},
