@@ -19,14 +19,8 @@
         "vscode": {
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "bungcip.better-toml",
-                "ms-python.isort",
-                "ms-toolsai.jupyter",
-                "lextudio.restructuredtext",
-                "trond-snekvik.simple-rst",
-                "njpwerner.autodocstring"
+                "ms-azuretools.vscode-azurefunctions",
+                "hashicorp.terraform"
             ]
         }
     },
