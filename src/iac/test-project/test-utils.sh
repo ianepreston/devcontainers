@@ -123,9 +123,6 @@ checkCommon()
     check "login-shell-path" [ -f "/etc/profile.d/00-restore-env.sh" ]
     check "code" which code
     check "rcm" which lsrc
-    check "pipx" pipx --version
-    check "poetry" poetry --version
-    check "nox" nox --version
 }
 
 reportResults() {
