@@ -123,6 +123,10 @@ checkCommon()
     check "login-shell-path" [ -f "/etc/profile.d/00-restore-env.sh" ]
     check "code" which code
     check "rcm" which lsrc
+    check "kubectl" which kubectl
+    check "terraform" terraform --version
+    check "ansible" ansible --version
+    check "az-cli" az --version
 }
 
 reportResults() {
