@@ -46,3 +46,24 @@ RUN export PYENV_ROOT=/usr/share/pyenv && \
 	echo 'eval "$(pyenv init -)"' >> ~/.bashrc && \
 	echo 'eval "$(pyenv init -)"' >> /home/vscode/.bashrc && \
 	chmod -R 777 /usr/share/pyenv/shims 
+
+# Install python tools with pipx (and install pipx)
+RUN export PIPX_HOME=/opt/pipx && \
+	export PIPX_BIN_DIR=/usr/local/bin && \
+	export PYENV_ROOT=/usr/share/pyenv && \
+	export PATH="$PYENV_ROOT/bin:$PATH" && \
+	export PATH="$PYENV_ROOT/shims:$PATH" && \
+	pyenv global 3.11 && \
+	python -m pip install --upgrade pip && \
+	python -m pip install pipx  && \
+	python -m pipx ensurepath && \
+	python -m pipx install poetry && \
+	# Have to put virtualenvs in the project directory or they'll be created in the container
+	# and won't persist
+	mkdir -p /root/.config/pypoetry && \
+	mkdir -p /home/vscode/.config/pypoetry && \
+	chown -R vscode:vscode /home/vscode/.config && \
+	printf '%s\n' '[virtualenvs]' 'create = true' 'in-project = true' > /root/.config/pypoetry/config.toml && \
+	printf '%s\n' '[virtualenvs]' 'create = true' 'in-project = true' > /home/vscode/.config/pypoetry/config.toml && \
+	python -m pipx install nox && \
+	python -m pipx inject nox nox-poetry
