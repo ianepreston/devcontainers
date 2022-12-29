@@ -22,21 +22,21 @@
 			]
 		},
 		"tags": [
-			"python-devcontainer:${VERSION}-${VARIANT}"
+			"iac-devcontainer:${VERSION}-${VARIANT}"
 		],
 		"variantTags": {
 			"jammy": [
-				"python-devcontainer:${VERSION}-ubuntu-22.04",
-				"python-devcontainer:${VERSION}-ubuntu22.04",
-				"python-devcontainer:${VERSION}-ubuntu"
+				"iac-devcontainer:${VERSION}-ubuntu-22.04",
+				"iac-devcontainer:${VERSION}-ubuntu22.04",
+				"iac-devcontainer:${VERSION}-ubuntu"
 			],
 			"focal": [
-				"python-devcontainer:${VERSION}-ubuntu-20.04",
-				"python-devcontainer:${VERSION}-ubuntu20.04"
+				"iac-devcontainer:${VERSION}-ubuntu-20.04",
+				"iac-devcontainer:${VERSION}-ubuntu20.04"
 			],
 			"bionic": [
-				"python-devcontainer:${VERSION}-ubuntu-18.04",
-				"python-devcontainer:${VERSION}-ubuntu18.04"
+				"iac-devcontainer:${VERSION}-ubuntu-18.04",
+				"iac-devcontainer:${VERSION}-ubuntu18.04"
 			]
 		}
 	},
