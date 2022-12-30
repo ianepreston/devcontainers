@@ -1,8 +1,6 @@
 # [Choice] Ubuntu version (use jammy or bionic on local arm64/Apple Silicon): jammy, focal, bionic
 ARG VARIANT="jammy"
 FROM ianepreston/base-devcontainer:${VARIANT}
-# Have to set it again to be included in the build
-ARG VARIANT
 
 # Pyenv dependencies: https://github.com/pyenv/pyenv/wiki#suggested-build-environment
 RUN apt update && \
@@ -23,10 +21,9 @@ RUN apt update && \
 	libxml2-dev \
 	libxmlsec1-dev \
 	libffi-dev \
-	liblzma-dev
-
-# Install pyenv and python versions
-RUN export PYENV_ROOT=/usr/share/pyenv && \
+	liblzma-dev &&\
+	# Install pyenv here, then we'll remove dependencies
+	export PYENV_ROOT=/usr/share/pyenv && \
 	curl https://pyenv.run | bash && \
 	export PATH="$PYENV_ROOT/bin:$PATH" && \
 	eval $(pyenv init --path) && \
@@ -44,8 +41,29 @@ RUN export PYENV_ROOT=/usr/share/pyenv && \
 	echo 'eval "$(pyenv init -)"' >> ~/.bashrc && \
 	echo 'eval "$(pyenv init -)"' >> /home/vscode/.bashrc && \
 	chmod -R 777 /usr/share/pyenv/shims && \
+	# Make sure pyenv version file is writable
+	touch /usr/share/pyenv/version && \
 	chmod 777 /usr/share/pyenv/version && \
-	export PYENV_VERSION=""
+	export PYENV_VERSION="" && \
+	apt remove -y \
+	make \
+	build-essential \
+	libssl-dev \
+	zlib1g-dev \
+	libbz2-dev \
+	libreadline-dev \
+	libsqlite3-dev \
+	# wget \
+	# curl \
+	llvm \
+	libncursesw5-dev \
+	xz-utils \
+	tk-dev \
+	libxml2-dev \
+	libxmlsec1-dev \
+	libffi-dev \
+	liblzma-dev &&\
+	apt autoremove -y
 
 # Install python tools with pipx (and install pipx)
 RUN export PIPX_HOME=/opt/pipx && \
