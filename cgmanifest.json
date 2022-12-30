@@ -24,9 +24,39 @@
             "Component": {
                 "Type": "other",
                 "Other": {
-                    "Name": "Docker Image: buildpack-deps",
-                    "Version": "bionic-curl",
-                    "DownloadUrl": "https://hub.docker.com/_/buildpack-deps"
+                    "Name": "Docker Image: ianepreston/base-devcontainer",
+                    "Version": "jammy",
+                    "DownloadUrl": "https://hub.docker.com/r/ianepreston/base-devcontainer"
+                }
+            }
+        },
+        {
+            "Component": {
+                "Type": "other",
+                "Other": {
+                    "Name": "Docker Image: ianepreston/base-devcontainer",
+                    "Version": "focal",
+                    "DownloadUrl": "https://hub.docker.com/r/ianepreston/base-devcontainer"
+                }
+            }
+        },
+        {
+            "Component": {
+                "Type": "other",
+                "Other": {
+                    "Name": "Docker Image: ianepreston/base-devcontainer",
+                    "Version": "jammy",
+                    "DownloadUrl": "https://hub.docker.com/r/ianepreston/base-devcontainer"
+                }
+            }
+        },
+        {
+            "Component": {
+                "Type": "other",
+                "Other": {
+                    "Name": "Docker Image: ianepreston/base-devcontainer",
+                    "Version": "focal",
+                    "DownloadUrl": "https://hub.docker.com/r/ianepreston/base-devcontainer"
                 }
             }
         }
