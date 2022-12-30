@@ -1,8 +1,8 @@
-# [base-ubuntu](https://github.com/ianepreston/devcontainers/tree/main/src/base-ubuntu)
+# [iac](https://github.com/ianepreston/devcontainers/tree/main/src/iac)
 
 **Image version:** dev
 
-**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/base-ubuntu)
+**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/iac)
 
 **Image variations:**
 - [jammy](#variant-jammy)
@@ -10,20 +10,20 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:8cc51e24c3f1fa5ebad55ac1a1c77a0e0c00597cb2b386e73d7f3c7a72d86e95
+**Digest:** sha256:cd1f3b6f18b7c328cecd64c8e5cc2ff455902cb784acfd071a21c83e0bef334f
 
 **Tags:**
 ```
-docker.io/ianepreston/base-devcontainer:dev-jammy
-docker.io/ianepreston/base-devcontainer:dev-ubuntu-22.04
-docker.io/ianepreston/base-devcontainer:dev-ubuntu22.04
-docker.io/ianepreston/base-devcontainer:dev-ubuntu
+docker.io/ianepreston/iac-devcontainer:dev-jammy
+docker.io/ianepreston/iac-devcontainer:dev-ubuntu-22.04
+docker.io/ianepreston/iac-devcontainer:dev-ubuntu22.04
+docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
 **Linux distribution:** Ubuntu 22.04.1 LTS (debian-like distro)
 
-**Architectures:** linux/amd64, linux/arm64
+**Architectures:** linux/amd64
 
 **Available (non-root) user:** vscode
 
@@ -71,13 +71,13 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:f4d24816b86bcbe559eb2e6b8432ae7743efc34b2774ccdd4776cc38e1c2b7e8
+**Digest:** sha256:7196fa564a919e83ce652ff52b03c67a49b3e037a3d2a553f3c2420030890c6f
 
 **Tags:**
 ```
-docker.io/ianepreston/base-devcontainer:dev-focal
-docker.io/ianepreston/base-devcontainer:dev-ubuntu-20.04
-docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
+docker.io/ianepreston/iac-devcontainer:dev-focal
+docker.io/ianepreston/iac-devcontainer:dev-ubuntu-20.04
+docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 

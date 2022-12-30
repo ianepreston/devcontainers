@@ -1,8 +1,8 @@
-# [base-ubuntu](https://github.com/ianepreston/devcontainers/tree/main/src/base-ubuntu)
+# [python](https://github.com/ianepreston/devcontainers/tree/main/src/python)
 
 **Image version:** dev
 
-**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/base-ubuntu)
+**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/python)
 
 **Image variations:**
 - [jammy](#variant-jammy)
@@ -10,14 +10,14 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:8cc51e24c3f1fa5ebad55ac1a1c77a0e0c00597cb2b386e73d7f3c7a72d86e95
+**Digest:** sha256:415fc291827e3bbff16b3b26f376838a2d5f6b32db27113b7f41f5ea96bdd0da
 
 **Tags:**
 ```
-docker.io/ianepreston/base-devcontainer:dev-jammy
-docker.io/ianepreston/base-devcontainer:dev-ubuntu-22.04
-docker.io/ianepreston/base-devcontainer:dev-ubuntu22.04
-docker.io/ianepreston/base-devcontainer:dev-ubuntu
+docker.io/ianepreston/python-devcontainer:dev-jammy
+docker.io/ianepreston/python-devcontainer:dev-ubuntu-22.04
+docker.io/ianepreston/python-devcontainer:dev-ubuntu22.04
+docker.io/ianepreston/python-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -71,13 +71,13 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:f4d24816b86bcbe559eb2e6b8432ae7743efc34b2774ccdd4776cc38e1c2b7e8
+**Digest:** sha256:3121bd130b5ff942e5106faa7438cee383a2fd52231420faa686ca6061f749e5
 
 **Tags:**
 ```
-docker.io/ianepreston/base-devcontainer:dev-focal
-docker.io/ianepreston/base-devcontainer:dev-ubuntu-20.04
-docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
+docker.io/ianepreston/python-devcontainer:dev-focal
+docker.io/ianepreston/python-devcontainer:dev-ubuntu-20.04
+docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
