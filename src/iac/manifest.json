@@ -1,5 +1,5 @@
 {
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"variants": [
 		"jammy",
 		"focal"
@@ -9,8 +9,7 @@
 		"rootDistro": "debian",
 		"architectures": {
 			"jammy": [
-				"linux/amd64",
-				"linux/arm64"
+				"linux/amd64"
 			],
 			"focal": [
 				"linux/amd64"
