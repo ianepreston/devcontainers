@@ -43,7 +43,8 @@ RUN export PYENV_ROOT=/usr/share/pyenv && \
 	echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> /home/vscode/.bashrc && \
 	echo 'eval "$(pyenv init -)"' >> ~/.bashrc && \
 	echo 'eval "$(pyenv init -)"' >> /home/vscode/.bashrc && \
-	chmod -R 777 /usr/share/pyenv/shims 
+	chmod -R 777 /usr/share/pyenv/shims && \
+	chmod 777 /usr/share/pyenv/version
 
 # Install python tools with pipx (and install pipx)
 RUN export PIPX_HOME=/opt/pipx && \
