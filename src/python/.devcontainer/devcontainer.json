@@ -26,7 +26,15 @@
                 "ms-toolsai.jupyter",
                 "lextudio.restructuredtext",
                 "trond-snekvik.simple-rst",
-                "njpwerner.autodocstring"
+                "njpwerner.autodocstring",
+                "EditorConfig.EditorConfig",
+                "eamodio.gitlens",
+                "ms-vsliveshare.vsliveshare",
+                "DavidAnson.vscode-markdownlint",
+                "esbenp.prettier-vscode",
+                "richie5um2.vscode-sort-json",
+                "Gruntfuggly.todo-tree",
+                "redhat.vscode-yaml"
             ]
         }
     },
