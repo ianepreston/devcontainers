@@ -11,15 +11,7 @@
             "upgradePackages": "true",
             "installZsh": "false",
             "installOhMyZsh": "false"
-        },
-        "ghcr.io/devcontainers/features/azure-cli:1": {},
-        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
-        "ghcr.io/devcontainers/features/terraform:1": {
-            "installTFsec": "true",
-            "installTerraformDocs": "true"
-        },
-        "ghcr.io/devcontainers-contrib/features/terraform-ls-asdf:2": {},
-        "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
+        }
     },
     // Configure tool-specific properties.
     "customizations": {
