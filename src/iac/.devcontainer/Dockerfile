@@ -1,4 +1,4 @@
-# [Choice] Ubuntu version (use jammy or bionic on local arm64/Apple Silicon): jammy, focal, bionic
+# [Choice] Ubuntu version (use jammy on local arm64/Apple Silicon): jammy, focal
 ARG VARIANT="jammy"
 FROM ianepreston/base-devcontainer:${VARIANT}
 
@@ -33,9 +33,10 @@ RUN curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
 	apt install -y azure-cli
 
 # Install kubectl
-RUN curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg \
-	https://packages.cloud.google.com/apt/doc/apt-key.gpg && \
-	echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] \
+RUN curl -sL https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
+	gpg --dearmor | \
+	tee /etc/apt/trusted.gpg.d/kubernetes.gpg > /dev/null && \
+	echo "deb [signed-by=/etc/apt/trusted.gpg.d/kubernetes.gpg] \
 	https://apt.kubernetes.io/ kubernetes-xenial main" | \
 	tee /etc/apt/sources.list.d/kubernetes.list && \
 	apt update && \
