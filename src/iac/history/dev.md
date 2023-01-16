@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:3886d23d7dcd70bba265b3e982c2e1d877c872d0215e3fec8391e792b1064f8d
+**Digest:** sha256:e6d11c177911cf9876331960c458b569a6bf41ac63763173e400202dc8c97783
 
 **Tags:**
 ```
@@ -57,21 +57,21 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3 |
+| openssh-client | 1:8.9p1-3ubuntu0.1 |
 | procps | 2:3.3.17-6ubuntu2 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.3-8ubuntu3.1 |
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.1 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.1 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.3 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:c2cfcb88370dbc686a543b589d2ed3005cec4451c73e970dbafbe8a47f1cfe2e
+**Digest:** sha256:f80d098865df1f793aa0f2a422fc9a1e5d318d00ac3111319c489790e27162f4
 
 **Tags:**
 ```
@@ -127,7 +127,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.2 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.9 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.11 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
