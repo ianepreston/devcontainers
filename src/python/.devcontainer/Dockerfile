@@ -7,6 +7,7 @@ RUN apt update && \
 	DEBIAN_FRONTEND=noninteractive apt install -y \
 	make \
 	build-essential \
+	pkg-config \
 	libssl-dev \
 	zlib1g-dev \
 	libbz2-dev \
@@ -47,7 +48,7 @@ RUN apt update && \
 	export PYENV_VERSION="" && \
 	apt remove -y \
 	make \
-	build-essential \
+	# build-essential \
 	libssl-dev \
 	zlib1g-dev \
 	libbz2-dev \
