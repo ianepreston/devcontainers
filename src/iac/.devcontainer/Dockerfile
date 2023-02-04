@@ -41,3 +41,10 @@ RUN curl -sL https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
 	tee /etc/apt/sources.list.d/kubernetes.list && \
 	apt update && \
 	apt install -y kubectl
+
+# Install Bitwarden CLI
+RUN wget https://github.com/bitwarden/clients/releases/download/cli-v2023.1.0/bw-linux-2023.1.0.zip && \
+	unzip bw-linux-2023.1.0.zip && \
+	rm bw-linux-2023.1.0.zip && \
+	chmod +x bw && \
+	mv bw /usr/bin/

@@ -127,6 +127,7 @@ checkCommon()
     check "terraform" terraform --version
     check "ansible" ansible --version
     check "az-cli" az --version
+    check "Bitwwarden" bw --version
 }
 
 reportResults() {
