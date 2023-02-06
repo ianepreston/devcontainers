@@ -1,8 +1,8 @@
-# [python](https://github.com/ianepreston/devcontainers/tree/main/src/python)
+# [docs](https://github.com/ianepreston/devcontainers/tree/main/src/docs)
 
 **Image version:** dev
 
-**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/python)
+**Source release/branch:** [main](https://github.com/ianepreston/devcontainers/tree/main/src/docs)
 
 **Image variations:**
 - [jammy](#variant-jammy)
@@ -10,20 +10,20 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:6817d39409ff2dc4d78edc0f8c3dea51bc2050abb099ef39b685d78343d9c9ec
+**Digest:** sha256:c16415820780d7e92849f462045e1dc3fd8f343408528b2149dd0407001890a2
 
 **Tags:**
 ```
-docker.io/ianepreston/python-devcontainer:dev-jammy
-docker.io/ianepreston/python-devcontainer:dev-ubuntu-22.04
-docker.io/ianepreston/python-devcontainer:dev-ubuntu22.04
-docker.io/ianepreston/python-devcontainer:dev-ubuntu
+docker.io/ianepreston/docs-devcontainer:dev-jammy
+docker.io/ianepreston/docs-devcontainer:dev-ubuntu-22.04
+docker.io/ianepreston/docs-devcontainer:dev-ubuntu22.04
+docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
 **Linux distribution:** Ubuntu 22.04.1 LTS (debian-like distro)
 
-**Architectures:** linux/amd64, linux/arm64
+**Architectures:** linux/amd64
 
 **Available (non-root) user:** vscode
 
@@ -71,13 +71,13 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:97c9b12056ff8b6eaff1a53e9329b1b5d52d7adb233da4c2b94d57bd5f1f8268
+**Digest:** sha256:139994068ac855d2ade8cc92f809be0ec88ed18743bafde899b182aa6a3f9f32
 
 **Tags:**
 ```
-docker.io/ianepreston/python-devcontainer:dev-focal
-docker.io/ianepreston/python-devcontainer:dev-ubuntu-20.04
-docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
+docker.io/ianepreston/docs-devcontainer:dev-focal
+docker.io/ianepreston/docs-devcontainer:dev-ubuntu-20.04
+docker.io/ianepreston/docs-devcontainer:dev-ubuntu20.04
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
