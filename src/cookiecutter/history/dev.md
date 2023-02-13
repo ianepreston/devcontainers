@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:a7c671b1d20e83ff24872f185b52792bcb8c7aa62eb70d02453ab8792213b49f
+**Digest:** sha256:a8a5894a6403e86e848aab91c038f61559064ca4d608ce33f83e134969d3bee5
 
 **Tags:**
 ```
@@ -42,7 +42,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
-| less | 590-1build1 |
+| less | 590-1ubuntu0.22.04.1 |
 | libc6 | 2.35-0ubuntu3.1 |
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.1 |
 | libicu70 | 70.1-2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:1abe339a392546110f0eb8c3a1818ddd98eb1897c7165ef5ff052c0658d90780
+**Digest:** sha256:bfbd6a6eff7b9c1c16cca4328f8a4ce83985e115bd6bb92a1b6ccf5191af417d
 
 **Tags:**
 ```
@@ -109,7 +109,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.2 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.16 |
+| libssl1.1 | 1.1.1f-1ubuntu2.17 |
 | libstdc++6 | 10.3.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.9 |
 | lsb-release | 11.1.0ubuntu2 |

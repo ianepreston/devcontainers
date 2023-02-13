@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:cb8cd6bc8524f5c5a8a2d9c0ae5b82f1fedfe6d556ebb0b8d3782ec7c5d571c0
+**Digest:** sha256:c9b1569ee8c73f2b615472d36eea36a35f075735b458c44b491bccd702f1f818
 
 **Tags:**
 ```
@@ -42,7 +42,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
-| less | 590-1build1 |
+| less | 590-1ubuntu0.22.04.1 |
 | libc6 | 2.35-0ubuntu3.1 |
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.1 |
 | libicu70 | 70.1-2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:7240d1fe354a4ba37b3c734a72ce012d6c62333d72a5350105d9f690c8452251
+**Digest:** sha256:c4ccfc6890325e05a053d3f358ac6b75dc9f746dbd3bbd5ac1e3027e31db2034
 
 **Tags:**
 ```
@@ -109,7 +109,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.2 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.16 |
+| libssl1.1 | 1.1.1f-1ubuntu2.17 |
 | libstdc++6 | 10.3.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.9 |
 | lsb-release | 11.1.0ubuntu2 |
