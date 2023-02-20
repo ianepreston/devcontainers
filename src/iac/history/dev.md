@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:c9b1569ee8c73f2b615472d36eea36a35f075735b458c44b491bccd702f1f818
+**Digest:** sha256:5c0f794b43d0fe5f0bc5c8c30fe138b18fad32907c0674b6c0282d6c209842e5
 
 **Tags:**
 ```
@@ -21,7 +21,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
-**Linux distribution:** Ubuntu 22.04.1 LTS (debian-like distro)
+**Linux distribution:** Ubuntu 22.04.2 LTS (debian-like distro)
 
 **Architectures:** linux/amd64
 
@@ -37,7 +37,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | ca-certificates | 20211016ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.7 |
 | dialog | 1.3-20211214-1 |
-| git | 1:2.34.1-1ubuntu1.6 |
+| git | 1:2.34.1-1ubuntu1.8 |
 | gnupg2 | 2.2.27-3ubuntu2.1 |
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:c4ccfc6890325e05a053d3f358ac6b75dc9f746dbd3bbd5ac1e3027e31db2034
+**Digest:** sha256:4de031edaed9373002df558d2029a85a49f3ef378ab7d9b279b6cd667f7ede58
 
 **Tags:**
 ```
@@ -97,7 +97,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 | ca-certificates | 20211016ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.15 |
 | dialog | 1.3-20190808-1 |
-| git | 1:2.25.1-1ubuntu3.8 |
+| git | 1:2.25.1-1ubuntu3.10 |
 | gnupg2 | 2.2.19-3ubuntu2.2 |
 | htop | 2.2.0-2build1 |
 | iproute2 | 5.5.0-1ubuntu1 |

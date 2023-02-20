@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:73aedd6e5c1ab27d4a807116dfa2b0144a79f12e0571c76fb8134f1fbef0df2f
+**Digest:** sha256:5b48ef2f226c74a841774003d34ac0bc2e57bd60a189f357893ad6b2c65ce1f5
 
 **Tags:**
 ```
@@ -21,7 +21,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
-**Linux distribution:** Ubuntu 22.04.1 LTS (debian-like distro)
+**Linux distribution:** Ubuntu 22.04.2 LTS (debian-like distro)
 
 **Architectures:** linux/amd64, linux/arm64
 
@@ -37,7 +37,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 | ca-certificates | 20211016ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.7 |
 | dialog | 1.3-20211214-1 |
-| git | 1:2.34.1-1ubuntu1.6 |
+| git | 1:2.34.1-1ubuntu1.8 |
 | gnupg2 | 2.2.27-3ubuntu2.1 |
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:f27b1fc0f5c44d6cd52b6fc7cbf95b3b3f62f88bc361ecbda2534d724483c955
+**Digest:** sha256:b4b8b57199b1f0cf4b227cd2d600aa45336e2453d07e414cdda41479161c3fdb
 
 **Tags:**
 ```
@@ -97,7 +97,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 | ca-certificates | 20211016ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.15 |
 | dialog | 1.3-20190808-1 |
-| git | 1:2.25.1-1ubuntu3.8 |
+| git | 1:2.25.1-1ubuntu3.10 |
 | gnupg2 | 2.2.19-3ubuntu2.2 |
 | htop | 2.2.0-2build1 |
 | iproute2 | 5.5.0-1ubuntu1 |
