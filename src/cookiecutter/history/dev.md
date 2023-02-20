@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:a8a5894a6403e86e848aab91c038f61559064ca4d608ce33f83e134969d3bee5
+**Digest:** sha256:d9d359b2e40eea1a89245c2c8595ad42f982d17b70d500ec7c214a8696ef664a
 
 **Tags:**
 ```
@@ -21,7 +21,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
-**Linux distribution:** Ubuntu 22.04.1 LTS (debian-like distro)
+**Linux distribution:** Ubuntu 22.04.2 LTS (debian-like distro)
 
 **Architectures:** linux/amd64
 
@@ -37,7 +37,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | ca-certificates | 20211016ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.7 |
 | dialog | 1.3-20211214-1 |
-| git | 1:2.34.1-1ubuntu1.6 |
+| git | 1:2.34.1-1ubuntu1.8 |
 | gnupg2 | 2.2.27-3ubuntu2.1 |
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:bfbd6a6eff7b9c1c16cca4328f8a4ce83985e115bd6bb92a1b6ccf5191af417d
+**Digest:** sha256:4a45db0c157f28bf34f96390da305aebdfdfcd30c9a693de2cae22fa4bd3d003
 
 **Tags:**
 ```
@@ -97,7 +97,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | ca-certificates | 20211016ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.15 |
 | dialog | 1.3-20190808-1 |
-| git | 1:2.25.1-1ubuntu3.8 |
+| git | 1:2.25.1-1ubuntu3.10 |
 | gnupg2 | 2.2.19-3ubuntu2.2 |
 | htop | 2.2.0-2build1 |
 | iproute2 | 5.5.0-1ubuntu1 |
