@@ -124,6 +124,8 @@ checkCommon()
     check "code" which code
     check "rcm" which lsrc
     check "xelatex" xelatex --version
+    check "quarto" quarto --version
+    check "nbdev" nbdev_help
 }
 
 reportResults() {

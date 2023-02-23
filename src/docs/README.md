@@ -2,7 +2,7 @@
 
 ## Summary
 
-*Based on my Ubuntu devcontainer, add all the requirements for building documentation in LaTex, Markdown or Quarto (eventually)
+*Based on my Ubuntu devcontainer, add all the requirements for building documentation in LaTex, Markdown or Quarto 
 
 | Metadata | Value |  
 |----------|-------|
