@@ -76,6 +76,8 @@ RUN export PIPX_HOME=/opt/pipx && \
 	python -m pip install --upgrade pip && \
 	python -m pip install pipx  && \
 	python -m pipx ensurepath && \
+	python -m pipx install cookiecutter && \
+	python -m pipx install cruft && \
 	python -m pipx install poetry && \
 	# Have to put virtualenvs in the project directory or they'll be created in the container
 	# and won't persist
