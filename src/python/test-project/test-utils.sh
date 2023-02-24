@@ -126,6 +126,8 @@ checkCommon()
     check "pipx" pipx --version
     check "poetry" poetry --version
     check "nox" nox --version
+    check "cookiecutter" cookiecutter --version
+    check "cruft" cruft --help
 }
 
 reportResults() {
