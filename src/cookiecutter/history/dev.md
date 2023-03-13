@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:837bb353b9e659aa99725d7a5e796b191f5a0561555293cf48c4d3fdfa3ae6b1
+**Digest:** sha256:63a6c0f8295f493e5082ccd5aba27259beb7d039f29806001b2c85c70e46c285
 
 **Tags:**
 ```
@@ -71,7 +71,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:80eff99b30aca62f4c3d4ac1e7760f038b447618921f6fd41a15c961c6ef5cd5
+**Digest:** sha256:d9049d2fb7d7a1c296def199bbbcc1e1195b821c8ef47b48bf82492c04921182
 
 **Tags:**
 ```
