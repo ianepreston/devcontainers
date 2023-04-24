@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:ce18a1a5ffdf6da57b7a00505b7fc6fd8bea78240d64f01e73c8c3c6b332b262
+**Digest:** sha256:ee48a3fc78af3ea9fe6e6ec84fab04c36caf256c2bd58d77765ccc42bcce1cf5
 
 **Tags:**
 ```
@@ -32,8 +32,8 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 | Tool / library | Version |
 |----------------|---------|
-| apt-transport-https | 2.4.8 |
-| apt-utils | 2.4.8 |
+| apt-transport-https | 2.4.9 |
+| apt-utils | 2.4.9 |
 | ca-certificates | 20211016ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.10 |
 | dialog | 1.3-20211214-1 |
@@ -64,14 +64,14 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.5 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.7 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:166ecc61437bf849a65268a3de43d7ecaff2a574815e7435529463c0d85dce3a
+**Digest:** sha256:7aa57faaa6c51ba16070be7120f2814398d55a6e2b921b82db2506122a9e6813
 
 **Tags:**
 ```
@@ -127,7 +127,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.13 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.14 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
