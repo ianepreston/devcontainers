@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:e80591b5991421ba5c0e1c7a4b49f4c8b811191ec2c5ac27883a810ea3c27ac1
+**Digest:** sha256:f0806f31e934178acdde09f0fd4132ace843dd24cf3f42b761946296115234ab
 
 **Tags:**
 ```
@@ -37,16 +37,16 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 | ca-certificates | 20211016ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.10 |
 | dialog | 1.3-20211214-1 |
-| git | 1:2.34.1-1ubuntu1.8 |
+| git | 1:2.34.1-1ubuntu1.9 |
 | gnupg2 | 2.2.27-3ubuntu2.1 |
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
 | less | 590-1ubuntu0.22.04.1 |
 | libc6 | 2.35-0ubuntu3.1 |
-| libgssapi-krb5-2 | 1.19.2-2ubuntu0.1 |
+| libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
 | libicu70 | 70.1-2 |
-| libkrb5-3 | 1.19.2-2ubuntu0.1 |
+| libkrb5-3 | 1.19.2-2ubuntu0.2 |
 | libstdc++6 | 12.1.0-2ubuntu1~22.04 |
 | locales | 2.35-0ubuntu3.1 |
 | lsb-release | 11.1.0ubuntu4 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:38f471aa59a32ec41e4557bcaf476ee50204b02e65a2d4cf1a5fd05098332332
+**Digest:** sha256:8b462637df3866d9806578ac10612c4cd5e3ea5d3ca8f424c7b868b3fecd943e
 
 **Tags:**
 ```
@@ -97,7 +97,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu20.04
 | ca-certificates | 20211016ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.18 |
 | dialog | 1.3-20190808-1 |
-| git | 1:2.25.1-1ubuntu3.10 |
+| git | 1:2.25.1-1ubuntu3.11 |
 | gnupg2 | 2.2.19-3ubuntu2.2 |
 | htop | 2.2.0-2build1 |
 | iproute2 | 5.5.0-1ubuntu1 |
@@ -109,7 +109,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.3 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.17 |
+| libssl1.1 | 1.1.1f-1ubuntu2.18 |
 | libstdc++6 | 10.3.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.9 |
 | lsb-release | 11.1.0ubuntu2 |
@@ -120,7 +120,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu20.04
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.5 |
+| openssh-client | 1:8.2p1-4ubuntu0.7 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.5 |
