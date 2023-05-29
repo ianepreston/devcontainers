@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:135faac9e0fe77534f39be228ed363e619d1eb153508eab4455a4aa44cf0c2f8
+**Digest:** sha256:543b97a679d5f11d952b5b8cfad3d9d4ef06cec7125adccc450c9cc83c2ead99
 
 **Tags:**
 ```
@@ -34,7 +34,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 |----------------|---------|
 | apt-transport-https | 2.4.9 |
 | apt-utils | 2.4.9 |
-| ca-certificates | 20211016ubuntu0.22.04.1 |
+| ca-certificates | 20230311ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.10 |
 | dialog | 1.3-20211214-1 |
 | git | 1:2.34.1-1ubuntu1.9 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:a8ed19df0067a655bae59f35b7ab87a2f3880270f1672f21169c9a818b2db648
+**Digest:** sha256:a1ecbac3e6eb123a321957098c3357738ea680c3ea601e520a02cb860c07eb82
 
 **Tags:**
 ```
@@ -94,7 +94,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 |----------------|---------|
 | apt-transport-https | 2.0.9 |
 | apt-utils | 2.0.9 |
-| ca-certificates | 20211016ubuntu0.20.04.1 |
+| ca-certificates | 20230311ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.18 |
 | dialog | 1.3-20190808-1 |
 | git | 1:2.25.1-1ubuntu3.11 |
