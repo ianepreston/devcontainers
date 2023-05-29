@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:eab459b34f625900d56cf7b5db768ed775a1ee77887e75608bac0a8e51f36a69
+**Digest:** sha256:bc80ecdee350d38d45e40074c09cce98d315e9aeb2e8ecb5633272b263d31384
 
 **Tags:**
 ```
@@ -34,7 +34,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 |----------------|---------|
 | apt-transport-https | 2.4.9 |
 | apt-utils | 2.4.9 |
-| ca-certificates | 20211016ubuntu0.22.04.1 |
+| ca-certificates | 20230311ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.10 |
 | dialog | 1.3-20211214-1 |
 | git | 1:2.34.1-1ubuntu1.9 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:e41432a88f0a7d3bf48739b2285988055e0b2587c105d0b9acfe8a6d10c5003e
+**Digest:** sha256:0a12cde9f4b96e66cf4b26b6b5cff4c3ee90e09a7ae76a8f4121cd1e13664a98
 
 **Tags:**
 ```
@@ -94,7 +94,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 |----------------|---------|
 | apt-transport-https | 2.0.9 |
 | apt-utils | 2.0.9 |
-| ca-certificates | 20211016ubuntu0.20.04.1 |
+| ca-certificates | 20230311ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.18 |
 | dialog | 1.3-20190808-1 |
 | git | 1:2.25.1-1ubuntu3.11 |
