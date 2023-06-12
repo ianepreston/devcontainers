@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:556d5a284ab41b6b597910b43b2e1c1c07bacef60b188c5570cef4f207fc31c9
+**Digest:** sha256:4bc4da482a7c21412961c4fb9f5b23472907dc1cdb95ff566a97e622021e9508
 
 **Tags:**
 ```
@@ -64,14 +64,14 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.7 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.8 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:8bd048e90ac7a787fc754483075bd92462a6fdf3d16bd30fe1f2f5044d921da7
+**Digest:** sha256:e311908fa464f8e1d5dcd12f64be32f4fd7e96de5d74fa9a022e234f54a615ef
 
 **Tags:**
 ```
@@ -127,7 +127,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.14 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.15 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
