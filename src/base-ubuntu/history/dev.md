@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:3927bd3d433d03d981a5b82c2c4a606666af6f3ae06dcf8226f301a3273a1ad4
+**Digest:** sha256:7eb81d743da2563d330123a3ae7d0d2303e8cf3141b0306c2d8026f04df15272
 
 **Tags:**
 ```
@@ -64,14 +64,14 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.7 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.8 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:e4b1ba9c9bee6b24a0e72549d1229474f5e630953f9ac524fbd397814c105b5d
+**Digest:** sha256:a3f28cd20be3a6643192446c8cd2e45fefe5425e3ae988c3e4110f786843219d
 
 **Tags:**
 ```
@@ -127,7 +127,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.14 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.15 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
