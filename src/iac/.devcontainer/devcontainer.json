@@ -11,7 +11,8 @@
             "upgradePackages": "true",
             "installZsh": "false",
             "installOhMyZsh": "false"
-        }
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     // Configure tool-specific properties.
     "customizations": {

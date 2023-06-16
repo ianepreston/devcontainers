@@ -128,6 +128,7 @@ checkCommon()
     check "ansible" ansible --version
     check "az-cli" az --version
     check "Bitwwarden" bw --version
+    check "docker" docker --version
 }
 
 reportResults() {
