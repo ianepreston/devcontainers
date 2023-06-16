@@ -124,6 +124,7 @@ checkCommon()
     check "code" which code
     check "rcm" which lsrc
     check "kubectl" which kubectl
+    check "helm" helm version
     check "terraform" terraform --version
     check "tflint" tflint --version
     check "ansible" ansible --version
