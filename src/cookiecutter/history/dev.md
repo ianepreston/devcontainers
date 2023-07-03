@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:f1df8535bd862bba66852d02dc5ec60c277babd2f0c44c4cbcafcf4eae144fa4
+**Digest:** sha256:afb1a47bd306f87b302bae423e683a5293906627a4fa67db312e965a1c428668
 
 **Tags:**
 ```
@@ -64,14 +64,14 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.8 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.9 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:3641a3ba6dcfa14e01e8a353d6ddf5c4aa83131e581567ffc2a7e30a1effa179
+**Digest:** sha256:93156e42df030956d898e84d52e7c0936d223c622406a591ba29b8e44be33bd3
 
 **Tags:**
 ```
