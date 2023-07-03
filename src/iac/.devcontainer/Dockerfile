@@ -1,3 +1,4 @@
+##### Don't forget to update links to Bitwarden and tfsec releases
 # [Choice] Ubuntu version (use jammy on local arm64/Apple Silicon): jammy, focal
 ARG VARIANT="jammy"
 FROM ianepreston/base-devcontainer:${VARIANT}
@@ -54,3 +55,18 @@ RUN wget https://github.com/bitwarden/clients/releases/download/cli-v2023.1.0/bw
 	rm bw-linux-2023.1.0.zip && \
 	chmod +x bw && \
 	mv bw /usr/bin/
+
+# Install tfsec
+RUN wget -O /usr/bin/tfsec https://github.com/aquasecurity/tfsec/releases/download/v1.28.1/tfsec-linux-amd64 && \
+	chmod +x /usr/bin/tfsec
+
+# Install terragrunt
+RUN wget -O /usr/bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/v0.48.0/terragrunt_linux_amd64 && \
+	chmod +x /usr/bin/terragrunt
+
+# Install terrafy
+RUN wget -O terrafy.zip https://github.com/Azure/aztfexport/releases/download/v0.12.0/aztfexport_v0.12.0_linux_amd64.zip && \
+	unzip terrafy.zip && \
+	rm terrafy.zip && \
+	chmod +x aztfexport && \
+	mv aztfexport /usr/bin/aztfexport
