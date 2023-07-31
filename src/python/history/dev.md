@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:ed1238383c093ebd004bc4e18dee586b43730de85950fbaa86994d8074b75751
+**Digest:** sha256:e072c5336f52933f6e348dc4b6d5bda2c5795a3b5215937497a9a63b74dba2f7
 
 **Tags:**
 ```
@@ -47,7 +47,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
 | libicu70 | 70.1-2 |
 | libkrb5-3 | 1.19.2-2ubuntu0.2 |
-| libstdc++6 | 12.1.0-2ubuntu1~22.04 |
+| libstdc++6 | 12.3.0-1ubuntu1~22.04 |
 | locales | 2.35-0ubuntu3.1 |
 | lsb-release | 11.1.0ubuntu4 |
 | lsof | 4.93.2+dfsg-1.1build2 |
@@ -57,7 +57,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3ubuntu0.1 |
+| openssh-client | 1:8.9p1-3ubuntu0.3 |
 | procps | 2:3.3.17-6ubuntu2 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:7661f38fce1df29e517836b5838e886fca3f999e83b2e2b1f9f5b137c7b5c2ed
+**Digest:** sha256:a3ce0c4fbac59470eb90434f1c00ba22d9428bcee55cdddc5bbeecb651fb9421
 
 **Tags:**
 ```
@@ -120,7 +120,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.7 |
+| openssh-client | 1:8.2p1-4ubuntu0.8 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.5 |
