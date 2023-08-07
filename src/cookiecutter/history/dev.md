@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:9b23f1dc1b6ba910a50cc990597147d44b0150c0f22ebf069b19ac873a2939ee
+**Digest:** sha256:5f923bbf78f1b68e3997b01502fb4bd210779d3528d582758acfaeca53371a34
 
 **Tags:**
 ```
@@ -21,7 +21,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
-**Linux distribution:** Ubuntu 22.04.2 LTS (debian-like distro)
+**Linux distribution:** Ubuntu 22.04.3 LTS (debian-like distro)
 
 **Architectures:** linux/amd64
 
@@ -47,7 +47,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
 | libicu70 | 70.1-2 |
 | libkrb5-3 | 1.19.2-2ubuntu0.2 |
-| libstdc++6 | 12.1.0-2ubuntu1~22.04 |
+| libstdc++6 | 12.3.0-1ubuntu1~22.04 |
 | locales | 2.35-0ubuntu3.1 |
 | lsb-release | 11.1.0ubuntu4 |
 | lsof | 4.93.2+dfsg-1.1build2 |
@@ -57,21 +57,21 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3ubuntu0.1 |
+| openssh-client | 1:8.9p1-3ubuntu0.3 |
 | procps | 2:3.3.17-6ubuntu2 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.9 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.10 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:0b41a2dc1ff53c7b0d3b94cf8001f06f47fa1f41aa42629a3a3d45587a276b7f
+**Digest:** sha256:30904eba473539782b443f0c25e66244796cfacef44ce257664d30effe824d28
 
 **Tags:**
 ```
@@ -104,13 +104,13 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | jq | 1.6-1ubuntu0.20.04.1 |
 | less | 551-1ubuntu0.1 |
 | libc6 | 2.31-0ubuntu9.9 |
-| libgcc1 | 1:10.3.0-1ubuntu1~20.04 |
+| libgcc1 | 1:10.5.0-1ubuntu1~20.04 |
 | libgssapi-krb5-2 | 1.17-6ubuntu4.3 |
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.3 |
 | liblttng-ust0 | 2.11.0-1 |
 | libssl1.1 | 1.1.1f-1ubuntu2.19 |
-| libstdc++6 | 10.3.0-1ubuntu1~20.04 |
+| libstdc++6 | 10.5.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.9 |
 | lsb-release | 11.1.0ubuntu2 |
 | lsof | 4.93.2+dfsg-1ubuntu0.20.04.1 |
@@ -120,14 +120,14 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.7 |
+| openssh-client | 1:8.2p1-4ubuntu0.8 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.5 |
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.15 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.16 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |

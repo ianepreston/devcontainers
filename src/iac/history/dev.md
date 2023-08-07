@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:6f62cf5248ace9527b33b788d10fea53ffc21d176c7aaad99f6e209a1c2c16d7
+**Digest:** sha256:0f32d7df76ac2f1529e0a6a68b2b69b09a3c824339284aad6fb0b0c72815a8c3
 
 **Tags:**
 ```
@@ -21,7 +21,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
-**Linux distribution:** Ubuntu 22.04.2 LTS (debian-like distro)
+**Linux distribution:** Ubuntu 22.04.3 LTS (debian-like distro)
 
 **Architectures:** linux/amd64
 
@@ -47,7 +47,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
 | libicu70 | 70.1-2 |
 | libkrb5-3 | 1.19.2-2ubuntu0.2 |
-| libstdc++6 | 12.1.0-2ubuntu1~22.04 |
+| libstdc++6 | 12.3.0-1ubuntu1~22.04 |
 | locales | 2.35-0ubuntu3.1 |
 | lsb-release | 11.1.0ubuntu4 |
 | lsof | 4.93.2+dfsg-1.1build2 |
@@ -57,21 +57,21 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3ubuntu0.1 |
+| openssh-client | 1:8.9p1-3ubuntu0.3 |
 | procps | 2:3.3.17-6ubuntu2 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.9 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.10 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:fcae21fc5ad48f1ebec04c6d4aa1105e10ce6d7599e9b52de9d84ce4732e9909
+**Digest:** sha256:fd37146ff6e598dbccd0b2eb7d65cb5d6d6aa2d44505952cdcb486f40347d51f
 
 **Tags:**
 ```
@@ -104,13 +104,13 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 | jq | 1.6-1ubuntu0.20.04.1 |
 | less | 551-1ubuntu0.1 |
 | libc6 | 2.31-0ubuntu9.9 |
-| libgcc1 | 1:10.3.0-1ubuntu1~20.04 |
+| libgcc1 | 1:10.5.0-1ubuntu1~20.04 |
 | libgssapi-krb5-2 | 1.17-6ubuntu4.3 |
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.3 |
 | liblttng-ust0 | 2.11.0-1 |
 | libssl1.1 | 1.1.1f-1ubuntu2.19 |
-| libstdc++6 | 10.3.0-1ubuntu1~20.04 |
+| libstdc++6 | 10.5.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.9 |
 | lsb-release | 11.1.0ubuntu2 |
 | lsof | 4.93.2+dfsg-1ubuntu0.20.04.1 |
@@ -120,14 +120,14 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.7 |
+| openssh-client | 1:8.2p1-4ubuntu0.8 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.5 |
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.15 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.16 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
