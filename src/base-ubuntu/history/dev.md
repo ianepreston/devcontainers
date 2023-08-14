@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:e6e187ec888dbcd93ff1c3d233e787a2536ab9b12772a19a55cd2318be3bb193
+**Digest:** sha256:e8a8e5fd0f3ccb3e2e4d986b70e5944efae6ed265ffe1652b7334102d68893c6
 
 **Tags:**
 ```
@@ -71,7 +71,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:275320ad51a48066efb2e4a022f1b0f7958800e99440705fd47661dce8fd39fe
+**Digest:** sha256:7254e16b2d379e95bf10694acfe27638adeeda5347f99509179ccebe746e953c
 
 **Tags:**
 ```
@@ -120,7 +120,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.8 |
+| openssh-client | 1:8.2p1-4ubuntu0.9 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.5 |
