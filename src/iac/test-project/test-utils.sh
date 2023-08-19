@@ -132,8 +132,9 @@ checkCommon()
     check "terrafy" aztfexport --version 
     check "ansible" ansible --version
     check "az-cli" az --version
-    check "Bitwwarden" bw --version
+    check "Bitwarden" bw --version
     check "docker" docker --version
+    check "databricks-cli" databricks -v
 }
 
 reportResults() {
