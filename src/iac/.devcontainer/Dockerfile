@@ -70,3 +70,6 @@ RUN wget -O terrafy.zip https://github.com/Azure/aztfexport/releases/download/v0
 	rm terrafy.zip && \
 	chmod +x aztfexport && \
 	mv aztfexport /usr/bin/aztfexport
+
+# Install databricks cli
+RUN curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh

@@ -134,6 +134,7 @@ checkCommon()
     check "az-cli" az --version
     check "Bitwarden" bw --version
     check "docker" docker --version
+    check "databricks-cli" databricks -v
 }
 
 reportResults() {
