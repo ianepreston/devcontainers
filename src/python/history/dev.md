@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:a5196b65a91033504298c2e85fab7a5b9896db804994b5bc4e920b363c1daa28
+**Digest:** sha256:0ae9d80b6ee04f86b78e007c0ebc676e1f2d408a0a274906bbc1fc8f71fea51e
 
 **Tags:**
 ```
@@ -32,12 +32,12 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 | Tool / library | Version |
 |----------------|---------|
-| apt-transport-https | 2.4.9 |
-| apt-utils | 2.4.9 |
+| apt-transport-https | 2.4.10 |
+| apt-utils | 2.4.10 |
 | ca-certificates | 20230311ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.13 |
 | dialog | 1.3-20211214-1 |
-| git | 1:2.34.1-1ubuntu1.9 |
+| git | 1:2.34.1-1ubuntu1.10 |
 | gnupg2 | 2.2.27-3ubuntu2.1 |
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
@@ -64,14 +64,14 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.10 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.11 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:89e0cff7418485ad539010b8528d2a4f41a70b2baa768db6ca3d9743aa06d092
+**Digest:** sha256:3ee23db56089d98995f7aa0143b50231e5a228eecb1948df9effea4e6917025e
 
 **Tags:**
 ```
@@ -127,7 +127,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.16 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.17 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
