@@ -71,5 +71,12 @@ RUN wget -O terrafy.zip https://github.com/Azure/aztfexport/releases/download/v0
 	chmod +x aztfexport && \
 	mv aztfexport /usr/bin/aztfexport
 
+# Install terraform-docs
+RUN wget -O terraform-docs.tar.gz https://terraform-docs.io/dl/v0.16.0/terraform-docs-v0.16.0-Linux-amd64.tar.gz && \
+	tar -xzf terraform-docs.tar.gz && \
+	rm terraform-docs.tar.gz && \
+	chmod +x terraform-docs && \
+	mv terraform-docs /usr/bin/terraform-docs
+
 # Install databricks cli
 RUN curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
