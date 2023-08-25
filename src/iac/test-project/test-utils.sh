@@ -130,6 +130,7 @@ checkCommon()
     check "tfsec" tfsec --version
     check "terragrunt" terragrunt --version
     check "terrafy" aztfexport --version 
+    check "terraform-docs" terraform-docs --version
     check "ansible" ansible --version
     check "az-cli" az --version
     check "Bitwarden" bw --version

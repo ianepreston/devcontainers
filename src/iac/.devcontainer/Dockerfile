@@ -50,9 +50,9 @@ RUN curl -sL https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
 RUN curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 # Install Bitwarden CLI
-RUN wget https://github.com/bitwarden/clients/releases/download/cli-v2023.1.0/bw-linux-2023.1.0.zip && \
-	unzip bw-linux-2023.1.0.zip && \
-	rm bw-linux-2023.1.0.zip && \
+RUN wget -O bitwarden.zip https://github.com/bitwarden/clients/releases/download/cli-v2023.7.0/bw-linux-2023.7.0.zip && \
+	unzip bitwarden.zip && \
+	rm bitwarden.zip && \
 	chmod +x bw && \
 	mv bw /usr/bin/
 
@@ -61,15 +61,22 @@ RUN wget -O /usr/bin/tfsec https://github.com/aquasecurity/tfsec/releases/downlo
 	chmod +x /usr/bin/tfsec
 
 # Install terragrunt
-RUN wget -O /usr/bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/v0.48.0/terragrunt_linux_amd64 && \
+RUN wget -O /usr/bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/v0.50.7/terragrunt_linux_amd64 && \
 	chmod +x /usr/bin/terragrunt
 
 # Install terrafy
-RUN wget -O terrafy.zip https://github.com/Azure/aztfexport/releases/download/v0.12.0/aztfexport_v0.12.0_linux_amd64.zip && \
+RUN wget -O terrafy.zip https://github.com/Azure/aztfexport/releases/download/v0.13.1/aztfexport_v0.13.1_linux_amd64.zip && \
 	unzip terrafy.zip && \
 	rm terrafy.zip && \
 	chmod +x aztfexport && \
 	mv aztfexport /usr/bin/aztfexport
+
+# Install terraform-docs
+RUN wget -O terraform-docs.tar.gz https://terraform-docs.io/dl/v0.16.0/terraform-docs-v0.16.0-Linux-amd64.tar.gz && \
+	tar -xzf terraform-docs.tar.gz && \
+	rm terraform-docs.tar.gz && \
+	chmod +x terraform-docs && \
+	mv terraform-docs /usr/bin/terraform-docs
 
 # Install databricks cli
 RUN curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
