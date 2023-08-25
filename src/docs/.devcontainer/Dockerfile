@@ -17,3 +17,6 @@ RUN apt update && \
       python3-virtualenv && \
 	python3 -m pip install --upgrade pip && \
 	python3 -m pip install nbdev
+
+# Install pre-commit
+RUN python3 -m pip install pre-commit

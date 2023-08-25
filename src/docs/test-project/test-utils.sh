@@ -126,6 +126,7 @@ checkCommon()
     check "xelatex" xelatex --version
     check "quarto" quarto --version
     check "nbdev" nbdev_help
+    check "pre-commit" pre-commit -V
 }
 
 reportResults() {
