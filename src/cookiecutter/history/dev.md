@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:1fca417d92509ca867bf67df5fd04db75de955f2acca15d5ac20b818a85a1fa8
+**Digest:** sha256:f642be54db084ee9971d3f5cb7042b7a19115ad18d056481ee90ceff4864ef95
 
 **Tags:**
 ```
@@ -43,12 +43,12 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
 | less | 590-1ubuntu0.22.04.1 |
-| libc6 | 2.35-0ubuntu3.1 |
+| libc6 | 2.35-0ubuntu3.3 |
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
 | libicu70 | 70.1-2 |
 | libkrb5-3 | 1.19.2-2ubuntu0.2 |
 | libstdc++6 | 12.3.0-1ubuntu1~22.04 |
-| locales | 2.35-0ubuntu3.1 |
+| locales | 2.35-0ubuntu3.3 |
 | lsb-release | 11.1.0ubuntu4 |
 | lsof | 4.93.2+dfsg-1.1build2 |
 | man-db | 2.10.2-1 |
@@ -57,7 +57,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3ubuntu0.3 |
+| openssh-client | 1:8.9p1-3ubuntu0.4 |
 | procps | 2:3.3.17-6ubuntu2 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:2c3f3973dd90d4cf3385e17a85e809409f5c06b7b7f148f6b7b54879e29e8a22
+**Digest:** sha256:b7cbeed47ead51a5e7d64644b35d482862bddb44e9eaa7e9f880000147d212b5
 
 **Tags:**
 ```
