@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:7ed33147e329a0ea045d4889081f54ca7776951b0839da728c641f8c4dc2841e
+**Digest:** sha256:3ad61e68ac7956bad603c6615ce9a8b9c758f88602cb14f2d1f0976cb033e44f
 
 **Tags:**
 ```
@@ -43,12 +43,12 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
 | less | 590-1ubuntu0.22.04.1 |
-| libc6 | 2.35-0ubuntu3.1 |
+| libc6 | 2.35-0ubuntu3.3 |
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
 | libicu70 | 70.1-2 |
 | libkrb5-3 | 1.19.2-2ubuntu0.2 |
 | libstdc++6 | 12.3.0-1ubuntu1~22.04 |
-| locales | 2.35-0ubuntu3.1 |
+| locales | 2.35-0ubuntu3.3 |
 | lsb-release | 11.1.0ubuntu4 |
 | lsof | 4.93.2+dfsg-1.1build2 |
 | man-db | 2.10.2-1 |
@@ -57,7 +57,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3ubuntu0.3 |
+| openssh-client | 1:8.9p1-3ubuntu0.4 |
 | procps | 2:3.3.17-6ubuntu2 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:caf3238be72be8f7bb7f85f8e6eebc7c5d32ccaa7f23e80b32119191ff3b2b3f
+**Digest:** sha256:226e3a69efed4c2aac5591dbf0d54a6094df4e964f23db585b58c596cbd1816e
 
 **Tags:**
 ```
