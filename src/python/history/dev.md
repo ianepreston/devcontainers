@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:a5989e485e6d38f33810ae51540a6c54b8bf19a356b83a8687d2ed9a3e3f5424
+**Digest:** sha256:dcd3f072c22a99144912edfa32df0787bbbb15b55f16866a53c80ff2ef549ff3
 
 **Tags:**
 ```
@@ -71,7 +71,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:acba29e68c34691e67423f05fa66733850883b458e5ce9dd97dd436a872dea0c
+**Digest:** sha256:90b7b21aa9cdc5c998d7b1d08235f6f57ee589fe0b49f92463119ee3c37db9cd
 
 **Tags:**
 ```
@@ -123,7 +123,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 | openssh-client | 1:8.2p1-4ubuntu0.9 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
-| rsync | 3.1.3-8ubuntu0.5 |
+| rsync | 3.1.3-8ubuntu0.7 |
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
