@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:373e882f7135ef6cd86c4b9a2ae9ff76783e88f929f86c09c92bde8492ff19ef
+**Digest:** sha256:c65e45b35ab9b677c0dd1523123a34936c25af8b2d804a38f30acc2c0c29a941
 
 **Tags:**
 ```
@@ -64,14 +64,14 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.12 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.13 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:741e9b0cb75fe0d4386efd0631562203c6297238fa0d35fb17189169c1939897
+**Digest:** sha256:be4e10e0abe1e837f0ba9a3d8a473d62c3c68f17592dbb1a9103479b51b37001
 
 **Tags:**
 ```
@@ -109,7 +109,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.3 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.19 |
+| libssl1.1 | 1.1.1f-1ubuntu2.20 |
 | libstdc++6 | 10.5.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.12 |
 | lsb-release | 11.1.0ubuntu2 |
@@ -127,7 +127,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.18 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.20 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
