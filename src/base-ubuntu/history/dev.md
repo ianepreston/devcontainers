@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:9c618a50ef5542e80fa165284fd0db04f6e1c868b9b96eddfa23cfdcabe8b196
+**Digest:** sha256:5980ee14ea5add96c70f804bbf66fe61815241425461ed34ac6d55ebbf8d5bb4
 
 **Tags:**
 ```
@@ -64,14 +64,14 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.4 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.12 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.13 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
 
 ## Variant: focal
 
-**Digest:** sha256:f12977434595323ed0ac014d5f3967fb84b47388045fffc10b8acd7e1749e3ec
+**Digest:** sha256:ad17e5ed6e02597ba6ecd01173e2e47cc371ede69230a6ca37c5965bab893aef
 
 **Tags:**
 ```
@@ -109,7 +109,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.3 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.19 |
+| libssl1.1 | 1.1.1f-1ubuntu2.20 |
 | libstdc++6 | 10.5.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.12 |
 | lsb-release | 11.1.0ubuntu2 |
@@ -127,7 +127,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 | strace | 5.5-3ubuntu1 |
 | sudo | 1.8.31-1ubuntu1.5 |
 | unzip | 6.0-25ubuntu1.1 |
-| vim-tiny | 2:8.1.2269-1ubuntu5.18 |
+| vim-tiny | 2:8.1.2269-1ubuntu5.20 |
 | wget | 1.20.3-1ubuntu2 |
 | zip | 3.0-11build1 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu1.5 |
