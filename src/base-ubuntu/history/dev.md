@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:5980ee14ea5add96c70f804bbf66fe61815241425461ed34ac6d55ebbf8d5bb4
+**Digest:** sha256:8ad62b255b97a54c554ab047c13de068f9f751f0271bfce21a09271f79389966
 
 **Tags:**
 ```
@@ -44,9 +44,9 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 | jq | 1.6-2.1ubuntu3 |
 | less | 590-1ubuntu0.22.04.1 |
 | libc6 | 2.35-0ubuntu3.4 |
-| libgssapi-krb5-2 | 1.19.2-2ubuntu0.2 |
+| libgssapi-krb5-2 | 1.19.2-2ubuntu0.3 |
 | libicu70 | 70.1-2 |
-| libkrb5-3 | 1.19.2-2ubuntu0.2 |
+| libkrb5-3 | 1.19.2-2ubuntu0.3 |
 | libstdc++6 | 12.3.0-1ubuntu1~22.04 |
 | locales | 2.35-0ubuntu3.4 |
 | lsb-release | 11.1.0ubuntu4 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:ad17e5ed6e02597ba6ecd01173e2e47cc371ede69230a6ca37c5965bab893aef
+**Digest:** sha256:d2fb4f077a1b324c47d3ddfa3ba81b8de49dae7ee858a6f275d27124d485a0e0
 
 **Tags:**
 ```
@@ -105,9 +105,9 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 | less | 551-1ubuntu0.1 |
 | libc6 | 2.31-0ubuntu9.12 |
 | libgcc1 | 1:10.5.0-1ubuntu1~20.04 |
-| libgssapi-krb5-2 | 1.17-6ubuntu4.3 |
+| libgssapi-krb5-2 | 1.17-6ubuntu4.4 |
 | libicu66 | 66.1-2ubuntu2.1 |
-| libkrb5-3 | 1.17-6ubuntu4.3 |
+| libkrb5-3 | 1.17-6ubuntu4.4 |
 | liblttng-ust0 | 2.11.0-1 |
 | libssl1.1 | 1.1.1f-1ubuntu2.20 |
 | libstdc++6 | 10.5.0-1ubuntu1~20.04 |
