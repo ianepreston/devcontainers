@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:36de9fb5c0bb0f9a2c6792bb55d64ed73fb0990cc2e25d661eb2c783c7cb42e0
+**Digest:** sha256:61a1641a2b2ee16d518106b61bcbb2952c3a4cce582230dbfb6f68d5c119e00a
 
 **Tags:**
 ```
@@ -32,8 +32,8 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 | Tool / library | Version |
 |----------------|---------|
-| apt-transport-https | 2.4.10 |
-| apt-utils | 2.4.10 |
+| apt-transport-https | 2.4.11 |
+| apt-utils | 2.4.11 |
 | ca-certificates | 20230311ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.14 |
 | dialog | 1.3-20211214-1 |
@@ -58,7 +58,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
 | openssh-client | 1:8.9p1-3ubuntu0.4 |
-| procps | 2:3.3.17-6ubuntu2 |
+| procps | 2:3.3.17-6ubuntu2.1 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
 | strace | 5.16-0ubuntu3 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:5e84ea95db66bcd9f32f897fb686853efc37e35864fda23c963b7da2a5a56060
+**Digest:** sha256:f95cf0da248890b9180e2fc88441a3b26e8a5d667a90f2765b52eaefe3791f76
 
 **Tags:**
 ```
@@ -92,8 +92,8 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 
 | Tool / library | Version |
 |----------------|---------|
-| apt-transport-https | 2.0.9 |
-| apt-utils | 2.0.9 |
+| apt-transport-https | 2.0.10 |
+| apt-utils | 2.0.10 |
 | ca-certificates | 20230311ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.20 |
 | dialog | 1.3-20190808-1 |
@@ -121,7 +121,7 @@ docker.io/ianepreston/cookiecutter-devcontainer:dev-ubuntu20.04
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
 | openssh-client | 1:8.2p1-4ubuntu0.9 |
-| procps | 2:3.3.16-1ubuntu2.3 |
+| procps | 2:3.3.16-1ubuntu2.4 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.7 |
 | strace | 5.5-3ubuntu1 |
