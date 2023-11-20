@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:8ad62b255b97a54c554ab047c13de068f9f751f0271bfce21a09271f79389966
+**Digest:** sha256:73b1fc4fd7e3fb48f4981ee6c1275b91db18c1956974a3e80491437d9b608f40
 
 **Tags:**
 ```
@@ -32,8 +32,8 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 
 | Tool / library | Version |
 |----------------|---------|
-| apt-transport-https | 2.4.10 |
-| apt-utils | 2.4.10 |
+| apt-transport-https | 2.4.11 |
+| apt-utils | 2.4.11 |
 | ca-certificates | 20230311ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.14 |
 | dialog | 1.3-20211214-1 |
@@ -58,7 +58,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
 | openssh-client | 1:8.9p1-3ubuntu0.4 |
-| procps | 2:3.3.17-6ubuntu2 |
+| procps | 2:3.3.17-6ubuntu2.1 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
 | strace | 5.16-0ubuntu3 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:d2fb4f077a1b324c47d3ddfa3ba81b8de49dae7ee858a6f275d27124d485a0e0
+**Digest:** sha256:5370b7391649a8bd93b644b9a716f8a642b06bc3b25d9a574320a19f95c3ef29
 
 **Tags:**
 ```
@@ -92,8 +92,8 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 
 | Tool / library | Version |
 |----------------|---------|
-| apt-transport-https | 2.0.9 |
-| apt-utils | 2.0.9 |
+| apt-transport-https | 2.0.10 |
+| apt-utils | 2.0.10 |
 | ca-certificates | 20230311ubuntu0.20.04.1 |
 | curl | 7.68.0-1ubuntu2.20 |
 | dialog | 1.3-20190808-1 |
@@ -121,7 +121,7 @@ docker.io/ianepreston/base-devcontainer:dev-ubuntu20.04
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
 | openssh-client | 1:8.2p1-4ubuntu0.9 |
-| procps | 2:3.3.16-1ubuntu2.3 |
+| procps | 2:3.3.16-1ubuntu2.4 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.7 |
 | strace | 5.5-3ubuntu1 |
