@@ -21,12 +21,8 @@
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "EditorConfig.EditorConfig",
-                "eamodio.gitlens",
-                "ms-vsliveshare.vsliveshare",
                 "DavidAnson.vscode-markdownlint",
-                "esbenp.prettier-vscode",
                 "richie5um2.vscode-sort-json",
-                "Gruntfuggly.todo-tree",
                 "redhat.vscode-yaml",
                 "James-Yu.latex-workshop",
                 "quarto.quarto"
