@@ -10,6 +10,8 @@ RUN	export DEBIAN_FRONTEND=noninteractive && \
 	apt-add-repository ppa:ansible/ansible && \
 	apt update && \
 	apt install -y ansible && \
+	apt install -y python3-pip && \
+	pip3 install websocket-client && \
 	ansible-galaxy collection install community.general && \
 	ansible-galaxy collection install kewlfft.aur
 
