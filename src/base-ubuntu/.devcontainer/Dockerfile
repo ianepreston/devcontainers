@@ -42,3 +42,10 @@ RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
+
+# Install diff-so-fancy 
+RUN apt update && \
+	apt install -y software-properties-common && \
+	add-apt-repository ppa:aos1/diff-so-fancy && \
+	apt update && \
+	apt install -y diff-so-fancy
