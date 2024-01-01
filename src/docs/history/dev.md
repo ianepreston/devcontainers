@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:5218ebb4fb10df9bb457f5925f8735a61bce6bf27e15097d41ec4c28c7711451
+**Digest:** sha256:95a11f4bc2283bad3bbbaec5e44a06eec7eabdb5772aacc69fa8cc3813496936
 
 **Tags:**
 ```
@@ -71,7 +71,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:816ff158339a36b20a42820d619ba05b7aedc12ce91cd9bc89d42ef630698500
+**Digest:** sha256:277729e3084fbcd4f53629f4a8b45dd4de540229ee1e563e462a1024efcec4e3
 
 **Tags:**
 ```
