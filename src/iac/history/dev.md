@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:600873ac15c638753b32e20e6202c0181fc507589a5764d5bc6f4c68eef30741
+**Digest:** sha256:36868e13a6a8e0ab2ed7cf189925bb1363397b42c37a074688b5c5a32b58652d
 
 **Tags:**
 ```
@@ -57,7 +57,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 | nano | 6.2-1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu5 |
-| openssh-client | 1:8.9p1-3ubuntu0.5 |
+| openssh-client | 1:8.9p1-3ubuntu0.6 |
 | procps | 2:3.3.17-6ubuntu2.1 |
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.7-0ubuntu0.22.04.2 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:6eb34a7cdd57832ed7a630ebd7a2afdc2c2418b111992f29ae88558340a4845b
+**Digest:** sha256:ebfec968314544700c6e73142b1dd9d3467f80eeda524d4360049c24f8430fa3
 
 **Tags:**
 ```
@@ -120,7 +120,7 @@ docker.io/ianepreston/iac-devcontainer:dev-ubuntu20.04
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.10 |
+| openssh-client | 1:8.2p1-4ubuntu0.11 |
 | procps | 2:3.3.16-1ubuntu2.4 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.7 |
