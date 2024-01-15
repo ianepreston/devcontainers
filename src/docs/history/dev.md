@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:0023e3e1d93fccddd56e2dc8c0222ff4c1c76332156eabf1a1983776c201b18b
+**Digest:** sha256:f047bf5f156d85fa10f26d6ec6bc8326ef1236fdf472ef8526557eb8605ec63f
 
 **Tags:**
 ```
@@ -43,12 +43,12 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
 | less | 590-1ubuntu0.22.04.1 |
-| libc6 | 2.35-0ubuntu3.5 |
+| libc6 | 2.35-0ubuntu3.6 |
 | libgssapi-krb5-2 | 1.19.2-2ubuntu0.3 |
 | libicu70 | 70.1-2 |
 | libkrb5-3 | 1.19.2-2ubuntu0.3 |
 | libstdc++6 | 12.3.0-1ubuntu1~22.04 |
-| locales | 2.35-0ubuntu3.5 |
+| locales | 2.35-0ubuntu3.6 |
 | lsb-release | 11.1.0ubuntu4 |
 | lsof | 4.93.2+dfsg-1.1build2 |
 | man-db | 2.10.2-1 |
@@ -71,7 +71,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:81fc8df39ebce3d5d8d22ed7140c92b0f898813c77e2e74969d7db9406c43601
+**Digest:** sha256:637583547a1f943d446eda225d5fe32e8a40a9b9638ae8442dd0acafc2bcda66
 
 **Tags:**
 ```
