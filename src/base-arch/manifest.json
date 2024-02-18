@@ -1,8 +1,14 @@
 {
-  "version": "1.0.0",
+  "version": "2024.2.18",
+  "variants": ["rolling"],
   "build": {
     "latest": "rolling",
     "rootDistro": "arch",
+    "architectures": {
+      "rolling": [
+        "linux/amd64"
+      ]
+    },
     "tags": ["base-arch-devcontainer:${VERSION}"]
   },
   "dependencies": {
