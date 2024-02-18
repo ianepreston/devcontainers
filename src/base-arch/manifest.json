@@ -4,5 +4,9 @@
     "latest": "rolling",
     "rootDistro": "arch",
     "tags": ["base-arch-devcontainer:${VERSION}"]
+  },
+  "dependencies": {
+    "image": "archlinux:latest",
+    "imageLink": "https://hub.docker.com/_/archlinux"
   }
 }
