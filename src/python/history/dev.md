@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:9e7098f4b3219b0cb0119eac06351b78f87eeebff01e90ec466ce3b57819757d
+**Digest:** sha256:4ca971fa332e19f0a5b13be585ed691a8219cf0571c102d371f1751fb85a20da
 
 **Tags:**
 ```
@@ -71,7 +71,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:fa4670a2a5d17c8ae98212c475c6efebf07eb64020d2644b9452d769f3950c2c
+**Digest:** sha256:62749bfa2017c8e1bd790018d70a37da6f59c99a05d0ac1edb2e6519249bb064
 
 **Tags:**
 ```
@@ -109,7 +109,7 @@ docker.io/ianepreston/python-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.4 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.20 |
+| libssl1.1 | 1.1.1f-1ubuntu2.21 |
 | libstdc++6 | 10.5.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.14 |
 | lsb-release | 11.1.0ubuntu2 |

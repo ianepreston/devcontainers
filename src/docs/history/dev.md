@@ -10,7 +10,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:e0de0754275d140aaeb4170fcb48f26b37b70b7a278c6fbc63001b8b44d45b8c
+**Digest:** sha256:bb246ed729a094219a8931f11570b114d2f3928c83dc8800dfdc0e4ff86f69d6
 
 **Tags:**
 ```
@@ -71,7 +71,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu
 
 ## Variant: focal
 
-**Digest:** sha256:10ada40249af2ce638e1301d08b93c9212b072c3256421fe70c629c919d99bab
+**Digest:** sha256:c549b03bb457a5f96d88a5f0e57d0a335ee3b339fc030964b73bf452fa9272ff
 
 **Tags:**
 ```
@@ -109,7 +109,7 @@ docker.io/ianepreston/docs-devcontainer:dev-ubuntu20.04
 | libicu66 | 66.1-2ubuntu2.1 |
 | libkrb5-3 | 1.17-6ubuntu4.4 |
 | liblttng-ust0 | 2.11.0-1 |
-| libssl1.1 | 1.1.1f-1ubuntu2.20 |
+| libssl1.1 | 1.1.1f-1ubuntu2.21 |
 | libstdc++6 | 10.5.0-1ubuntu1~20.04 |
 | locales | 2.31-0ubuntu9.14 |
 | lsb-release | 11.1.0ubuntu2 |
