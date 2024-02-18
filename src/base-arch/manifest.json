@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "build": {
+    "latest": "rolling",
+    "rootDistro": "arch",
+    "tags": ["base-arch-devcontainer:${VERSION}"]
+  }
+}
