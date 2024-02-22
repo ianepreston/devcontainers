@@ -51,7 +51,7 @@ checkOSPackages() {
     LABEL=$1
     shift
     echo -e "\n🧪 Testing $LABEL"
-    if dpkg-query --show -f='${Package}: ${Version}\n' "$@"; then 
+    if pacman -Qq "$@"; then 
         echo "✅  Passed!"
         return 0
     else
@@ -90,29 +90,12 @@ checkExtension() {
 
 checkCommon()
 {
-    PACKAGE_LIST="apt-utils \
-        git \
-        openssh-client \
-        less \
-        iproute2 \
-        procps \
-        curl \
-        wget \
-        unzip \
-        nano \
-        jq \
-        lsb-release \
-        ca-certificates \
-        apt-transport-https \
-        dialog \
-        gnupg2 \
-        libc6 \
-        libgcc1 \
-        libgssapi-krb5-2 \
-        liblttng-ust1 \
-        libstdc++6 \
-        zlib1g \
-        locales \
+    PACKAGE_LIST="\
+        terraform \
+        ansible \
+        kubectl \
+        helm \
+        bitwarden \
         sudo"
 
     # Actual tests
@@ -121,20 +104,8 @@ checkCommon()
     check "locale" [ $(locale -a | grep en_US.utf8) ]
     check "sudo" sudo echo "sudo works."
     check "login-shell-path" [ -f "/etc/profile.d/00-restore-env.sh" ]
-    check "code" which code
-    check "rcm" which lsrc
-    check "kubectl" which kubectl
-    check "helm" helm version
-    check "terraform" terraform --version
     check "tflint" tflint --version
-    check "tfsec" tfsec --version
-    check "terragrunt" terragrunt --version
-    check "terrafy" aztfexport --version 
-    check "terraform-docs" terraform-docs --version
-    check "ansible" ansible --version
     check "az-cli" az --version
-    check "Bitwarden" bw --version
-    check "docker" docker --version
     check "databricks-cli" databricks -v
 }
 

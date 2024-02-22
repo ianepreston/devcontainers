@@ -3,17 +3,6 @@
         "dockerfile": "./Dockerfile",
         "context": "."
     },
-    "features": {
-        "ghcr.io/devcontainers/features/common-utils:1": {
-            "username": "vscode",
-            "uid": "1000",
-            "gid": "1000",
-            "upgradePackages": "true",
-            "installZsh": "false",
-            "installOhMyZsh": "false"
-        },
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
     // Configure tool-specific properties.
     "customizations": {
         // Configure properties specific to VS Code.
@@ -34,5 +23,5 @@
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "uname -a",
     // Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-    "remoteUser": "vscode"
+    "remoteUser": "arch"
 }
