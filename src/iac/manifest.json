@@ -1,37 +1,20 @@
 {
-	"version": "0.3.1",
-	"variants": [
-		"jammy",
-		"focal"
-	],
+	"version": "2024.2.21",
+	"variants": ["rolling"],
 	"build": {
-		"latest": "jammy",
-		"rootDistro": "debian",
+		"latest": "rolling",
+		"rootDistro": "arch",
 		"architectures": {
-			"jammy": [
-				"linux/amd64"
-			],
-			"focal": [
+			"rolling": [
 				"linux/amd64"
 			]
 		},
 		"tags": [
-			"iac-devcontainer:${VERSION}-${VARIANT}"
-		],
-		"variantTags": {
-			"jammy": [
-				"iac-devcontainer:${VERSION}-ubuntu-22.04",
-				"iac-devcontainer:${VERSION}-ubuntu22.04",
-				"iac-devcontainer:${VERSION}-ubuntu"
-			],
-			"focal": [
-				"iac-devcontainer:${VERSION}-ubuntu-20.04",
-				"iac-devcontainer:${VERSION}-ubuntu20.04"
-			]
-		}
+			"iac-devcontainer:${VERSION}"
+		]
 	},
 	"dependencies": {
-		"image": "ianepreston/base-devcontainer:${VARIANT}",
-		"imageLink": "https://hub.docker.com/r/ianepreston/base-devcontainer"
+		"image": "ianepreston/base-arch-devcontainer:latest",
+		"imageLink": "https://hub.docker.com/r/ianepreston/base-arch-devcontainer"
 	}
 }
