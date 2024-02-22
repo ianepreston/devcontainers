@@ -1,20 +1,16 @@
 {
-	"version": "2024.2.22",
-	"variants": ["rolling"],
-	"build": {
-		"latest": "rolling",
-		"rootDistro": "arch",
-		"architectures": {
-			"rolling": [
-				"linux/amd64"
-			]
-		},
-		"tags": [
-			"iac-devcontainer:${VERSION}"
-		]
-	},
-	"dependencies": {
-		"image": "ianepreston/base-arch-devcontainer:latest",
-		"imageLink": "https://hub.docker.com/r/ianepreston/base-arch-devcontainer"
-	}
+  "version": "2024.2.22",
+  "variants": ["rolling"],
+  "build": {
+    "latest": "rolling",
+    "rootDistro": "arch",
+    "architectures": {
+      "rolling": ["linux/amd64"]
+    },
+    "tags": ["iac-devcontainer:${VERSION}"]
+  },
+  "dependencies": {
+    "image": "ianepreston/base-arch-devcontainer:latest",
+    "imageLink": "https://hub.docker.com/r/ianepreston/base-arch-devcontainer"
+  }
 }

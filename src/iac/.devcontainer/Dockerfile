@@ -8,7 +8,7 @@ RUN	pacman -S --noconfirm \
 	terraform \
 	kubectl \
 	helm \
-	bitwarden \
+	bitwarden-cli \
 	python-websocket-client && \
 	pacman -Scc --noconfirm
 

@@ -95,7 +95,7 @@ checkCommon()
         ansible \
         kubectl \
         helm \
-        bitwarden \
+        bitwarden-cli \
         sudo"
 
     # Actual tests
