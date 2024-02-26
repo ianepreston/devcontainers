@@ -3,7 +3,8 @@ FROM ianepreston/base-arch-devcontainer:latest
 
 USER root
 # Install packages
-RUN	pacman -S --noconfirm \
+RUN	pacman -Syu --noconfirm && \
+    pacman -S --noconfirm \
 	ansible \
 	terraform \
 	kubectl \
