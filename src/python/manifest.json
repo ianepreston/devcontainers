@@ -1,38 +1,16 @@
 {
-	"version": "0.4.0",
-	"variants": [
-		"jammy",
-		"focal"
-	],
-	"build": {
-		"latest": "jammy",
-		"rootDistro": "debian",
-		"architectures": {
-			"jammy": [
-				"linux/amd64",
-				"linux/arm64"
-			],
-			"focal": [
-				"linux/amd64"
-			]
-		},
-		"tags": [
-			"python-devcontainer:${VERSION}-${VARIANT}"
-		],
-		"variantTags": {
-			"jammy": [
-				"python-devcontainer:${VERSION}-ubuntu-22.04",
-				"python-devcontainer:${VERSION}-ubuntu22.04",
-				"python-devcontainer:${VERSION}-ubuntu"
-			],
-			"focal": [
-				"python-devcontainer:${VERSION}-ubuntu-20.04",
-				"python-devcontainer:${VERSION}-ubuntu20.04"
-			]
-		}
-	},
-	"dependencies": {
-		"image": "ianepreston/base-devcontainer:${VARIANT}",
-		"imageLink": "https://hub.docker.com/r/ianepreston/base-devcontainer"
-	}
+  "version": "2024.2.26",
+  "variants": ["rolling"],
+  "build": {
+    "latest": "rolling",
+    "rootDistro": "arch",
+    "architectures": {
+      "rolling": ["linux/amd64"]
+    },
+    "tags": ["python-devcontainer:${VERSION}"]
+  },
+  "dependencies": {
+    "image": "ianepreston/base-arch-devcontainer:latest",
+    "imageLink": "https://hub.docker.com/r/ianepreston/base-arch-devcontainer"
+  }
 }
