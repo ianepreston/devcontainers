@@ -15,14 +15,12 @@ COPY locale.conf /etc/locale.conf
 RUN sed -e '/NoProgressBar/ s/^#*/#/' -i /etc/pacman.conf ;\
 	sed -e '/Color/ s/^#//' -i /etc/pacman.conf
 
-RUN pacman -Syyu --noconfirm --needed reflector base-devel git sudo
+RUN pacman -Syyu --noconfirm --needed base-devel git sudo && pacman -Scc --noconfirm
 
 RUN groupadd -g "${GUID}" "${USERNAME}" ;\
 	useradd -ms /bin/bash "${USERNAME}" -u "${UUID}" -g "${USERNAME}" -g wheel ;\
 	echo "ALL ALL=(ALL) NOPASSWD:ALL" > "/etc/sudoers.d/${USERNAME}" ;\
 	chmod 0440 "/etc/sudoers.d/${USERNAME}"
-
-RUN reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist
 
 RUN pacman -S --noconfirm \
 	curl \
@@ -31,6 +29,12 @@ RUN pacman -S --noconfirm \
 	unzip \
 	openssh \
 	jq \
+	python \
+    ripgrep \
+    fd \
+    lazygit \
+    neofetch \
+    shellcheck \
 	neovim \
 	fish \
 	starship && \
