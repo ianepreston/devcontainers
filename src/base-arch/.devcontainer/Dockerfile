@@ -30,6 +30,7 @@ RUN pacman -S --noconfirm \
 	openssh \
 	jq \
 	python \
+	pre-commit \
     ripgrep \
     fd \
     lazygit \
