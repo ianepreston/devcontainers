@@ -1,5 +1,5 @@
 {
-  "version": "2024.2.26",
+  "version": "2024.2.28",
   "variants": ["rolling"],
   "build": {
     "latest": "rolling",

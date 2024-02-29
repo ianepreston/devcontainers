@@ -73,6 +73,7 @@ checkCommon()
         neofetch \
         ripgrep \
         fd \
+        npm \
         lazygit \
         curl \
         wget \

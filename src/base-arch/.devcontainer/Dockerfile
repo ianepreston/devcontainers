@@ -35,6 +35,7 @@ RUN pacman -S --noconfirm \
     fd \
     lazygit \
     neofetch \
+    npm \
     shellcheck \
 	neovim \
 	fish \
