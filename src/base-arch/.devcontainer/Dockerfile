@@ -30,6 +30,7 @@ RUN pacman -S --noconfirm \
 	openssh \
 	jq \
 	python \
+    python-cookiecutter \
 	pre-commit \
     ripgrep \
     fd \

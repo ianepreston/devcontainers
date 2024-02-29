@@ -72,6 +72,9 @@ checkCommon()
         procps \
         neofetch \
         ripgrep \
+        python \
+        pre-commit \
+        python-cookiecutter \
         fd \
         npm \
         lazygit \
